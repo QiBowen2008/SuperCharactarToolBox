@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public static class Set
     {

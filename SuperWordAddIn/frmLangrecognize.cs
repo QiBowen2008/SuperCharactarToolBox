@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
 using Newtonsoft.Json;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class frmLangrecognize :Sunny .UI .UIForm 
     {

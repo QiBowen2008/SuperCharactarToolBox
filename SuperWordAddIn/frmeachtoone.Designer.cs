@@ -1,4 +1,4 @@
-﻿namespace SuperWenZiToolBox
+﻿namespace SuperTextToolBox.WordAddIn
 {
     partial class frmeachtoone
     {

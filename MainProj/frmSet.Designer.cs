@@ -1,4 +1,4 @@
-﻿namespace SuperWenZiToolBox
+﻿namespace SuperTextToolBox
 {
     partial class frmSet
     {
@@ -25,8 +25,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuperWenZiToolBox.Properties.Settings settings1 = new SuperWenZiToolBox.Properties.Settings();
-            SuperWenZiToolBox.Properties.Settings settings2 = new SuperWenZiToolBox.Properties.Settings();
+            SuperTextToolBox.Properties.Settings settings1 = new SuperTextToolBox.Properties.Settings();
+            SuperTextToolBox.Properties.Settings settings2 = new SuperTextToolBox.Properties.Settings();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -117,9 +117,9 @@
             // uiCheckBox1
             // 
             this.uiCheckBox1.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiCheckBox1.Checked = global::SuperWenZiToolBox.Properties.Settings.Default.AutoIcon;
+            this.uiCheckBox1.Checked = global::SuperTextToolBox.Properties.Settings.Default.AutoIcon;
             this.uiCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiCheckBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SuperWenZiToolBox.Properties.Settings.Default, "AutoIcon", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.uiCheckBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SuperTextToolBox.Properties.Settings.Default, "AutoIcon", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.uiCheckBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiCheckBox1.Location = new System.Drawing.Point(33, 48);
             this.uiCheckBox1.MinimumSize = new System.Drawing.Size(1, 1);
@@ -282,7 +282,7 @@
             // 
             // uiComboBox1
             // 
-            this.uiComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::SuperWenZiToolBox.Properties.Settings.Default, "TranslateAppID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.uiComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::SuperTextToolBox.Properties.Settings.Default, "TranslateAppID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.uiComboBox1.DataSource = null;
             this.uiComboBox1.FillColor = System.Drawing.Color.White;
             this.uiComboBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
@@ -300,7 +300,7 @@
             this.uiComboBox1.Size = new System.Drawing.Size(432, 29);
             this.uiComboBox1.Style = Sunny.UI.UIStyle.Gray;
             this.uiComboBox1.TabIndex = 4;
-            this.uiComboBox1.Text = global::SuperWenZiToolBox.Properties.Settings.Default.TranslateAppID;
+            this.uiComboBox1.Text = global::SuperTextToolBox.Properties.Settings.Default.TranslateAppID;
             this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiComboBox1.Watermark = "";
             // 

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using Microsoft.Office.Tools.Ribbon;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class frmeachtoone : Sunny .UI .UIForm 
     {

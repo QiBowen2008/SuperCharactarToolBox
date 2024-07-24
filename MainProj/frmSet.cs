@@ -5,7 +5,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Security.Policy;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmSet : Sunny.UI.UIForm
     {

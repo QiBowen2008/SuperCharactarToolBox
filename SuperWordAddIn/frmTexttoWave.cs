@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class frmTexttoWave : Sunny.UI.UIForm
     {

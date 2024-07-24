@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public static  class chuansong
     {

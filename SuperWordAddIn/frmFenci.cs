@@ -4,7 +4,7 @@ using Microsoft.Office.Interop.Word;
 using System;
 using System.IO;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class frmFenci : Sunny.UI.UIForm
     {

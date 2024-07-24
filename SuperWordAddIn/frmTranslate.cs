@@ -11,7 +11,7 @@ using System.Web;
 using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class frmTranslate : Sunny.UI.UIForm
     {

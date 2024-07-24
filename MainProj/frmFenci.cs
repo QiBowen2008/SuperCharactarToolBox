@@ -3,7 +3,7 @@ using Lucene.Net.Analysis;
 using System;
 using System.IO;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmFenci : Sunny.UI.UIForm
     {

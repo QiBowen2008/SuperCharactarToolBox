@@ -1,4 +1,4 @@
-﻿namespace SuperWenZiToolBox
+﻿namespace SuperTextToolBox.WordAddIn
 {
     partial class frmSet
     {
@@ -25,8 +25,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuperWenZiToolBox.Properties.Settings settings1 = new SuperWenZiToolBox.Properties.Settings();
-            SuperWenZiToolBox.Properties.Settings settings2 = new SuperWenZiToolBox.Properties.Settings();
+            SuperTextToolBox.WordAddIn.Properties.Settings settings1 = new SuperTextToolBox.WordAddIn.Properties.Settings();
+            SuperTextToolBox.WordAddIn.Properties.Settings settings2 = new SuperTextToolBox.WordAddIn.Properties.Settings();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();

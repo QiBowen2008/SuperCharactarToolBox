@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SuperWenZiToolBox 
+namespace SuperTextToolBox.WordAddIn 
 {
     public partial class Item : UserControl
     {

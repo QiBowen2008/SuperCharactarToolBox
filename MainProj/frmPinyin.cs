@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmPinyin : Sunny.UI.UIForm
     {

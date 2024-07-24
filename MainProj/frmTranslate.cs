@@ -10,7 +10,7 @@ using System.Text;
 using System.Web;
 using System.Drawing;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmTranslate : Sunny.UI.UIForm
     {

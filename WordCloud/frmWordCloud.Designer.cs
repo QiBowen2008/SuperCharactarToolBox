@@ -1,6 +1,6 @@
-﻿namespace WordCloudApp
+﻿namespace SuperTextToolBox.WordCloudTool
 {
-    partial class Form1
+    partial class frmWordCloud
     {
         /// <summary>
         /// 必需的设计器变量。

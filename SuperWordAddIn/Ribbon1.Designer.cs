@@ -1,4 +1,4 @@
-﻿namespace SuperWenZiToolBox
+﻿namespace SuperTextToolBox.WordAddIn
 {
     partial class Ribbon1 : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
@@ -36,11 +36,6 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.group2 = this.Factory.CreateRibbonGroup();
-            this.group4 = this.Factory.CreateRibbonGroup();
-            this.label1 = this.Factory.CreateRibbonLabel();
-            this.group3 = this.Factory.CreateRibbonGroup();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
             this.button3 = this.Factory.CreateRibbonButton();
@@ -52,7 +47,9 @@
             this.button14 = this.Factory.CreateRibbonButton();
             this.button4 = this.Factory.CreateRibbonButton();
             this.button5 = this.Factory.CreateRibbonButton();
+            this.group2 = this.Factory.CreateRibbonGroup();
             this.button6 = this.Factory.CreateRibbonButton();
+            this.group4 = this.Factory.CreateRibbonGroup();
             this.splitButton1 = this.Factory.CreateRibbonSplitButton();
             this.button10 = this.Factory.CreateRibbonButton();
             this.splitButton2 = this.Factory.CreateRibbonSplitButton();
@@ -61,8 +58,11 @@
             this.button18 = this.Factory.CreateRibbonButton();
             this.button15 = this.Factory.CreateRibbonButton();
             this.button19 = this.Factory.CreateRibbonButton();
+            this.label1 = this.Factory.CreateRibbonLabel();
+            this.group3 = this.Factory.CreateRibbonGroup();
             this.button7 = this.Factory.CreateRibbonButton();
             this.button8 = this.Factory.CreateRibbonButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group2.SuspendLayout();
@@ -90,37 +90,6 @@
             this.group1.Items.Add(this.splitButton3);
             this.group1.Label = "文字处理";
             this.group1.Name = "group1";
-            // 
-            // group2
-            // 
-            this.group2.Items.Add(this.button6);
-            this.group2.Label = "文字游戏";
-            this.group2.Name = "group2";
-            // 
-            // group4
-            // 
-            this.group4.Items.Add(this.splitButton1);
-            this.group4.Items.Add(this.label1);
-            this.group4.Label = "AI工具";
-            this.group4.Name = "group4";
-            // 
-            // label1
-            // 
-            this.label1.Label = "由通义千问提供支持";
-            this.label1.Name = "label1";
-            // 
-            // group3
-            // 
-            this.group3.Items.Add(this.button7);
-            this.group3.Items.Add(this.button8);
-            this.group3.Label = "选项";
-            this.group3.Name = "group3";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Multiselect = true;
-            this.openFileDialog1.SupportMultiDottedExtensions = true;
             // 
             // button1
             // 
@@ -214,6 +183,12 @@
             this.button5.ShowImage = true;
             this.button5.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button5_Click);
             // 
+            // group2
+            // 
+            this.group2.Items.Add(this.button6);
+            this.group2.Label = "文字游戏";
+            this.group2.Name = "group2";
+            // 
             // button6
             // 
             this.button6.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -222,6 +197,13 @@
             this.button6.Name = "button6";
             this.button6.ShowImage = true;
             this.button6.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button6_Click);
+            // 
+            // group4
+            // 
+            this.group4.Items.Add(this.splitButton1);
+            this.group4.Items.Add(this.label1);
+            this.group4.Label = "AI工具";
+            this.group4.Name = "group4";
             // 
             // splitButton1
             // 
@@ -277,6 +259,18 @@
             this.button19.Name = "button19";
             this.button19.ShowImage = true;
             // 
+            // label1
+            // 
+            this.label1.Label = "由通义千问提供支持";
+            this.label1.Name = "label1";
+            // 
+            // group3
+            // 
+            this.group3.Items.Add(this.button7);
+            this.group3.Items.Add(this.button8);
+            this.group3.Label = "选项";
+            this.group3.Name = "group3";
+            // 
             // button7
             // 
             this.button7.Label = "设置";
@@ -288,6 +282,12 @@
             this.button8.Label = "关于";
             this.button8.Name = "button8";
             this.button8.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button8_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.SupportMultiDottedExtensions = true;
             // 
             // Ribbon1
             // 

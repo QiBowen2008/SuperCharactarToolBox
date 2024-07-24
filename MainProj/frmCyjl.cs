@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmCyjl : Sunny.UI.UIForm
     {

@@ -1,6 +1,8 @@
 ﻿using JiebaNet.Analyser;
 using JiebaNet.Segmenter;
 using JiebaNet.Segmenter.Common;
+using Microsoft.Office.Interop.Word;
+using SuperTextToolBox.WordAddIn;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,15 +10,14 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 using WordCloudSharp;
 namespace WordCloudApp
 {
-    public partial class Form1 : Sunny.UI.UIForm
+    public partial class frmWordCloud : Sunny.UI.UIForm
     {
         public string maskpic = "";
-        public Form1()
+        public frmWordCloud()
         {
             InitializeComponent();
         }
@@ -42,8 +43,7 @@ namespace WordCloudApp
                 pictureBox1.Image = Image.FromFile("result.jpg");
                 toolStripStatusLabel1.Text = "生成成功";
             }
-            uiButton3.Enabled = true;     
-                }
+        }
         /// <summary>
         /// 从指定文本中抽取关键词的同时得到其权重
         /// </summary>
@@ -65,6 +65,8 @@ namespace WordCloudApp
                 sbr.Append(item.Weight);
                 sbr.AppendLine(",");
             }
+            string filename = "关键词权重统计.csv";
+            File.WriteAllText(filename, sbr.ToString(), Encoding.UTF8);
             return wordWeight.ToArray();
         }
         static KeyValuePair<string, int>[] Counter(string text, WordWeightPair[] wordWeightAry)
@@ -90,6 +92,8 @@ namespace WordCloudApp
                 sbr.Append(pair.Value);
                 sbr.AppendLine(",");
             }
+            string filename = "词频统计结果.csv";
+            File.WriteAllText(filename, sbr.ToString(), Encoding.UTF8);
             return countAry;
         }
         /// <summary>
@@ -121,6 +125,8 @@ namespace WordCloudApp
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            Selection sel = Globals.ThisAddIn.Application.Selection;
+            textBox1.Text = sel.Text;
             if (File.Exists("result.jpg"))
             {
                 File.Delete("result.jpg");
@@ -129,33 +135,17 @@ namespace WordCloudApp
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            Thread t = new Thread((ThreadStart)(() =>
-            {
-                saveFileDialog1.ShowDialog();
-
-            }
-));
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-            t.Join();
+            saveFileDialog1.ShowDialog();
             File.Copy("result.jpg", saveFileDialog1.FileName, true);
-            toolStripStatusLabel1.Text = "保存图片成功"; // 将出现这个异常的语句放到这里面
+            toolStripStatusLabel1.Text = "保存图片成功";
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            Thread t = new Thread((ThreadStart)(() =>
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-
-                } 
+                StreamReader sr = new StreamReader(openFileDialog1.FileName);
+                textBox1.Text = sr.ReadToEnd();
             }
-));
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-            t.Join();
-            StreamReader sr = new StreamReader(openFileDialog1.FileName);
-            textBox1.Text = sr.ReadToEnd();
         }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {

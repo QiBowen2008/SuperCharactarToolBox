@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmAbout : Sunny.UI.UIForm
     {

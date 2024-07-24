@@ -8,7 +8,7 @@ using System.Web;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox
 {
     public partial class frmLangrecognize :Sunny .UI .UIForm 
     {

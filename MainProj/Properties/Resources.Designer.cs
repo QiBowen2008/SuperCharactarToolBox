@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace SuperWenZiToolBox.Properties {
+namespace SuperTextToolBox.Properties {
     using System;
     /// <summary>
     ///   一个强类型的资源类，用于查找本地化的字符串等。
@@ -32,7 +32,7 @@ namespace SuperWenZiToolBox.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SuperWenZiToolBox.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SuperTextToolBox.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

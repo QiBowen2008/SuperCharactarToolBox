@@ -1,4 +1,4 @@
-﻿namespace SuperWenZiToolBox
+﻿namespace SuperTextToolBox
 {
     partial class frmLangrecognize
     {

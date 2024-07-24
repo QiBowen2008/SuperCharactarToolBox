@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System;
 using System.Diagnostics;
 
-namespace SuperWenZiToolBox
+namespace SuperTextToolBox.WordAddIn
 {
     public partial class Ribbon1
     {
