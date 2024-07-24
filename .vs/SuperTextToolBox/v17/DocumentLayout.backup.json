@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|c:\\users\\qdqy\\desktop\\supertexttoolbox\\ocrtool\\formtip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|solutionrelative:ocrtool\\formtip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|c:\\users\\qdqy\\desktop\\supertexttoolbox\\ocrtool\\ocrfull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|solutionrelative:ocrtool\\ocrfull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|c:\\users\\qdqy\\desktop\\supertexttoolbox\\ocrtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|solutionrelative:ocrtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|c:\\users\\qdqy\\desktop\\supertexttoolbox\\ocrtool\\inimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|solutionrelative:ocrtool\\inimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|c:\\users\\qdqy\\desktop\\supertexttoolbox\\ocrtool\\formtip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}|OCRTool\\OCRTool.csproj|solutionrelative:ocrtool\\formtip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|SuperWordAddIn\\SuperWordAddIn.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\superwordaddin\\formaichat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|SuperWordAddIn\\SuperWordAddIn.csproj|solutionrelative:superwordaddin\\formaichat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\mainproj\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|solutionrelative:mainproj\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\mainproj\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|solutionrelative:mainproj\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\mainproj\\frmset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59F9ACA-8CE0-454E-9625-BB99A8C86963}|MainProj\\SuperWenZiToolBox.csproj|solutionrelative:mainproj\\frmset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71960F62-048A-473F-B6D1-F90DAFC0516F}|WordCloudApp\\WordCloudApp.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\wordcloudapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71960F62-048A-473F-B6D1-F90DAFC0516F}|WordCloudApp\\WordCloudApp.csproj|solutionrelative:wordcloudapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71960F62-048A-473F-B6D1-F90DAFC0516F}|WordCloudApp\\WordCloudApp.csproj|C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\wordcloudapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71960F62-048A-473F-B6D1-F90DAFC0516F}|WordCloudApp\\WordCloudApp.csproj|solutionrelative:wordcloudapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OCRFull.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\OCRFull.cs",
+              "RelativeDocumentMoniker": "OCRTool\\OCRFull.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\OCRFull.cs",
+              "RelativeToolTip": "OCRTool\\OCRFull.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:18:08.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IniManager.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\IniManager.cs",
+              "RelativeDocumentMoniker": "OCRTool\\IniManager.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\IniManager.cs",
+              "RelativeToolTip": "OCRTool\\IniManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:17:50.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "formtip.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\formtip.Designer.cs",
+              "RelativeDocumentMoniker": "OCRTool\\formtip.Designer.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\formtip.Designer.cs",
+              "RelativeToolTip": "OCRTool\\formtip.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwEQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:17:48.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\Program.cs",
+              "RelativeDocumentMoniker": "OCRTool\\Program.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\Program.cs",
+              "RelativeToolTip": "OCRTool\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:17:37.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "formtip.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\formtip.cs",
+              "RelativeDocumentMoniker": "OCRTool\\formtip.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\OCRTool\\formtip.cs",
+              "RelativeToolTip": "OCRTool\\formtip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:17:13.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormAIChat.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\SuperWordAddIn\\FormAIChat.cs",
+              "RelativeDocumentMoniker": "SuperWordAddIn\\FormAIChat.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\SuperWordAddIn\\FormAIChat.cs",
+              "RelativeToolTip": "SuperWordAddIn\\FormAIChat.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAEwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:01:23.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "MainProj\\Properties\\Settings.Designer.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "MainProj\\Properties\\Settings.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:01:14.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "MainProj\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\Properties\\Settings.settings",
+              "RelativeToolTip": "MainProj\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-07-23T14:00:46.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmSet.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\frmSet.Designer.cs",
+              "RelativeDocumentMoniker": "MainProj\\frmSet.Designer.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\MainProj\\frmSet.Designer.cs",
+              "RelativeToolTip": "MainProj\\frmSet.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:59:00.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\WordCloudApp\\Form1.cs",
+              "RelativeDocumentMoniker": "WordCloudApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\WordCloudApp\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "WordCloudApp\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:55:40.235Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\WordCloudApp\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WordCloudApp\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\qdqy\\Desktop\\SuperTextToolBox\\WordCloudApp\\Form1.Designer.cs",
+              "RelativeToolTip": "WordCloudApp\\Form1.Designer.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAEwMwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:55:26.507Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 908,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9842f08a-884d-4136-9922-43d2b83db7c2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

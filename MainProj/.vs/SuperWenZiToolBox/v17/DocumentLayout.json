@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\\u5DE5\u7A0B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE01B0C-33F6-406F-9E30-95A1308C97A5}|..\\OCRAddin\\OCR.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\ocraddin\\ocrfull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE01B0C-33F6-406F-9E30-95A1308C97A5}|..\\OCRAddin\\OCR.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\ocraddin\\ocrfull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE01B0C-33F6-406F-9E30-95A1308C97A5}|..\\OCRAddin\\OCR.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\ocraddin\\mrumanager\\mrumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\mrumanager\\mrumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\formaichat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\formaichat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\chuansong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28D11A8-AB61-4D75-99C1-B42F7C7DF5A1}|..\\WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\item.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}|..\\SuperWordAddIn\\SuperWordAddIn.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\superwordaddin\\formaichat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28D11A8-AB61-4D75-99C1-B42F7C7DF5A1}|..\\WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\c#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Resources\\Ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\WindowsFormsApp1\\Form1.cs",
+              "RelativeToolTip": "..\\WindowsFormsApp1\\Form1.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:57:52.346Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OCRFull.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\OCRFull.cs",
+              "RelativeDocumentMoniker": "..\\OCRAddin\\OCRFull.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\OCRFull.cs",
+              "RelativeToolTip": "..\\OCRAddin\\OCRFull.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:35:23.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OCRFull.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\OCRFull.cs",
+              "RelativeDocumentMoniker": "..\\OCRAddin\\OCRFull.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\OCRFull.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\OCRAddin\\OCRFull.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:32:44.925Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MRUManager.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\MRUManager\\MRUManager.cs",
+              "RelativeDocumentMoniker": "..\\OCRAddin\\MRUManager\\MRUManager.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\OCRAddin\\MRUManager\\MRUManager.cs",
+              "RelativeToolTip": "..\\OCRAddin\\MRUManager\\MRUManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:32:24.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MRUManager.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\MRUManager\\MRUManager.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\MRUManager\\MRUManager.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\MRUManager\\MRUManager.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\MRUManager\\MRUManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:31:22.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "chuansong.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\chuansong.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\chuansong.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\chuansong.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\chuansong.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:16:44.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormAIChat.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\FormAIChat.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\FormAIChat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:13:42.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAIChat.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\FormAIChat.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\SuperWordAddIn\\FormAIChat.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:13:39.25Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Item.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Item.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Item.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:03:00.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Item.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Item.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:03:02.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ribbon1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Ribbon1.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Ribbon1.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Ribbon1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Ribbon1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:30:29.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Item.Designer.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.Designer.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Item.Designer.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Item.Designer.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Item.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:03:17.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ribbon1.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Ribbon1.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Ribbon1.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Ribbon1.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Ribbon1.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAowH4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:01:58.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormAIChat.Designer.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.Designer.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\FormAIChat.Designer.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\FormAIChat.Designer.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\FormAIChat.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:02:34.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\WindowsFormsApp1\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\WindowsFormsApp1\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:57:50.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Ribbon1.cs",
+              "DocumentMoniker": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Resources\\Ribbon1.cs",
+              "RelativeDocumentMoniker": "..\\SuperWordAddIn\\Resources\\Ribbon1.cs",
+              "ToolTip": "D:\\\u9F50\u535A\u6587\\\u8F6F\u4EF6\u5F00\u53D1\\C#\\\u4E07\u80FD\u6587\u5B57\u5DE5\u5177\u7BB1\\SuperWordAddIn\\Resources\\Ribbon1.cs",
+              "RelativeToolTip": "..\\SuperWordAddIn\\Resources\\Ribbon1.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:41:11.348Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 908,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9842f08a-884d-4136-9922-43d2b83db7c2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

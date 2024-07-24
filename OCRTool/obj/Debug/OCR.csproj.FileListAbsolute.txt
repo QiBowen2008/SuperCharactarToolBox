@@ -1,0 +1,8 @@
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCRFull.exe
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCRFull.pdb
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCR.csproj.AssemblyReference.cache
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCRFull.formtip.resources
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCRAddin.OCRFull.resources
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCRFull.Properties.Resources.resources
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCR.csproj.GenerateResource.cache
+C:\Users\qdqy\Desktop\SuperTextToolBox\OCRAddin\obj\Debug\OCR.csproj.CoreCompileInputs.cache
