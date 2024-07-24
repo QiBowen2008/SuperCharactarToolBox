@@ -41,4 +41,4 @@
 2.翻译计划增加领域翻译（已经实现）
 3.自定义词云生成
 4.修复成语接龙Bug
-5.增加Word和PowerPoint插件功能
+5.增加Word和PowerPoint插件功能（word即将实现）
