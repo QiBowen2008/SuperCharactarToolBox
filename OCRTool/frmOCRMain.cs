@@ -88,13 +88,13 @@ namespace SuperTextToolBox.OCRTool
                     string selectedlang = uiComboBox1.SelectedItem as string;
                     if (langmodel.TryGetValue(selectedlang, out string outputlang))
                     {
-                        config.det_infer = modelPathroot + @"\Multilingual_PP-OCRv3_det_infer";
+                        config.det_infer = modelPathroot + @"\Multilingual_PP-OCRv3_det_slim_infer";
                         config.cls_infer = modelPathroot + @"\ch_ppocr_mobile_v2.0_cls_infer";
-                        config.rec_infer = modelPathroot + @"\REC\" + outputlang + "_PP-OCRv3_rec";
+                        config.rec_infer = modelPathroot + @"\REC\" + outputlang + "_PP-OCRv3_rec_infer";
                         config.keys = modelPathroot + @"\LangDict\" + outputlang + "_dict.txt";
-                        xlsxconfig.det_infer = modelPathroot + @"\Multilingual_PP-OCRv3_det_infer";
+                        xlsxconfig.det_infer = modelPathroot + @"\Multilingual_PP-OCRv3_det_slim_infer";
                         xlsxconfig.cls_infer = modelPathroot + @"\ch_ppocr_mobile_v2.0_cls_infer";
-                        xlsxconfig.rec_infer = modelPathroot + @"\REC\" + outputlang + "_PP-OCRv3_rec";
+                        xlsxconfig.rec_infer = modelPathroot + @"\REC\" + outputlang + "_PP-OCRv3_rec_infer";
                         xlsxconfig.keys = modelPathroot + @"\LangDict\" + outputlang + "_dict.txt";
                         xlsxconfig.table_model_dir = modelPathroot + @"\ch_ppstructure_mobile_v2.0_SLANet_infer";
 
@@ -151,8 +151,10 @@ namespace SuperTextToolBox.OCRTool
                                 }
                                 row++;
                             }
-                            saveFileDialog1.ShowDialog();
-                            package.SaveAs(saveFileDialog2.FileName);
+                            if (saveFileDialog2.ShowDialog() == DialogResult.OK)
+                            {
+                                package.SaveAs(saveFileDialog2.FileName);
+                            }
                         }
                     }
                     catch
@@ -247,7 +249,7 @@ namespace SuperTextToolBox.OCRTool
 
         private void uiButton3_Click(object sender, EventArgs e)
         {
-            OCR(canshu.path, canshu.ocrtype);
+            OCR(canshu.path, uiComboBox2 .Text );
         }
     }
 }
