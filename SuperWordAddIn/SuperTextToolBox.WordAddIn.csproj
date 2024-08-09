@@ -24,8 +24,8 @@
     <ProjectGuid>{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <RootNamespace>SuperWordAddIn</RootNamespace>
-    <AssemblyName>SuperWordAddIn</AssemblyName>
+    <RootNamespace>SuperTextToolBox.WordAddIn</RootNamespace>
+    <AssemblyName>SuperTextToolBox.WordAddIn</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40;UseOfficeInterop</DefineConstants>
     <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
@@ -45,6 +45,7 @@
     <FriendlyName>SuperWordAddIn</FriendlyName>
     <OfficeApplicationDescription />
     <LoadBehavior>3</LoadBehavior>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -94,6 +95,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <!--
     This section defines properties that are set when the "Release" configuration is selected.
@@ -118,6 +120,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <!--
     This section specifies references for the project.
@@ -151,8 +154,11 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NStandard, Version=0.76.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\工程\packages\NStandard.0.76.0\lib\net452\NStandard.dll</HintPath>
+    <Reference Include="NStandard, Version=0.9.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NStandard.0.9.16\lib\net452\NStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFClown, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFClown.NET.2.0.0\lib\PDFClown.dll</HintPath>
     </Reference>
     <Reference Include="PowerCollections">
       <HintPath>..\packages\PowerCollections.dll</HintPath>
@@ -254,18 +260,36 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="chuansong.cs" />
+    <Compile Include="frmMassivePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMassivePrint.Designer.cs">
+      <DependentUpon>frmMassivePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFSeperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFSeperator.Designer.cs">
+      <DependentUpon>frmPDFSeperator.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmWordCloud.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmWordCloud.Designer.cs">
       <DependentUpon>frmWordCloud.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAIChat.cs">
+    <Compile Include="frmWordToPDF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAIChat.Designer.cs">
-      <DependentUpon>frmAIChat.cs</DependentUpon>
+    <Compile Include="frmWordToPDF.Designer.cs">
+      <DependentUpon>frmWordToPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="funPublicFun.cs" />
+    <Compile Include="frmAI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAI.Designer.cs">
+      <DependentUpon>frmAI.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
@@ -279,23 +303,17 @@
     <Compile Include="frmCyjl.Designer.cs">
       <DependentUpon>frmCyjl.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmeachtoone.cs">
+    <Compile Include="frmEachToOne.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmeachtoone.Designer.cs">
-      <DependentUpon>frmeachtoone.cs</DependentUpon>
+    <Compile Include="frmEachToOne.Designer.cs">
+      <DependentUpon>frmEachToOne.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFenci.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFenci.Designer.cs">
       <DependentUpon>frmFenci.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLangrecognize.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLangrecognize.Designer.cs">
-      <DependentUpon>frmLangrecognize.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPinyin.cs">
       <SubType>Form</SubType>
@@ -321,21 +339,14 @@
     <Compile Include="frmTranslate.Designer.cs">
       <DependentUpon>frmTranslate.cs</DependentUpon>
     </Compile>
-    <Compile Include="IniManager.cs" />
-    <Compile Include="Item.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Item.Designer.cs">
-      <DependentUpon>Item.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <EmbeddedResource Include="frmWordCloud.resx">
-      <DependentUpon>frmWordCloud.cs</DependentUpon>
+    <EmbeddedResource Include="frmAI.resx">
+      <DependentUpon>frmAI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAIChat.resx">
-      <DependentUpon>frmAIChat.cs</DependentUpon>
+    <EmbeddedResource Include="frmMassivePrint.resx">
+      <DependentUpon>frmMassivePrint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
@@ -343,14 +354,14 @@
     <EmbeddedResource Include="frmCyjl.resx">
       <DependentUpon>frmCyjl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmeachtoone.resx">
-      <DependentUpon>frmeachtoone.cs</DependentUpon>
+    <EmbeddedResource Include="frmEachToOne.resx">
+      <DependentUpon>frmEachToOne.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFenci.resx">
       <DependentUpon>frmFenci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLangrecognize.resx">
-      <DependentUpon>frmLangrecognize.cs</DependentUpon>
+    <EmbeddedResource Include="frmPDFSeperator.resx">
+      <DependentUpon>frmPDFSeperator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPinyin.resx">
       <DependentUpon>frmPinyin.cs</DependentUpon>
@@ -364,19 +375,17 @@
     <EmbeddedResource Include="frmTranslate.resx">
       <DependentUpon>frmTranslate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Item.resx">
-      <DependentUpon>Item.cs</DependentUpon>
+    <EmbeddedResource Include="frmWordCloud.resx">
+      <DependentUpon>frmWordCloud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWordToPDF.resx">
+      <DependentUpon>frmWordToPDF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.cs</DependentUpon>
     </EmbeddedResource>
@@ -386,6 +395,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -397,7 +411,6 @@
     <Compile Include="Ribbon1.Designer.cs">
       <DependentUpon>Ribbon1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Set.cs" />
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -411,58 +424,28 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Image1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\OCR.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\OCR1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Translate.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Reader.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fenci.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pinyin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\set.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cyjl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iBV.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Jln.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ftj.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\76b154fe9c0c5a49b37da3d5a21fe25a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d5b2b10e-d147-4157-8091-5103d29f0804.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jhffhdhdfhd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iBV1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iBV222.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\MORE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chengyujielong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LangScan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wordcloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OCR3.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -482,6 +465,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>SuperWordAddIn_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

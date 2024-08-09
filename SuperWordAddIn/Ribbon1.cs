@@ -65,9 +65,9 @@ namespace SuperTextToolBox.WordAddIn
                     // 保存图片到指定路径
                     string fullPath = Path.Combine(savePath, fileName);
                     clipboardImage.Save(fullPath, System.Drawing.Imaging.ImageFormat.Png);
-                    Process.Start("OCR.exe",fullPath);
+                    Process.Start("SuperTextToolBox.OCRTool.exe", fullPath);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
@@ -83,13 +83,13 @@ namespace SuperTextToolBox.WordAddIn
                 InlineShape selectedInlineShape = wordApp.Selection.InlineShapes[1];
                 if (selectedInlineShape.Type == WdInlineShapeType.wdInlineShapePicture)
                 {
-                    selectedInlineShape.Range.CopyAsPicture ();
+                    selectedInlineShape.Range.CopyAsPicture();
                     SavePic();
                 }
                 else
                 {
                     StraghtOpen();
-                }         
+                }
             }
             else
             {
@@ -98,7 +98,7 @@ namespace SuperTextToolBox.WordAddIn
         }
         private void StraghtOpen()
         {
-            Process.Start("OCRFull.exe");
+            Process.Start("SuperTextToolBox.OCRTool.exe");
         }
         private void OCRText(object sender, RibbonControlEventArgs e)
         {
@@ -116,30 +116,40 @@ namespace SuperTextToolBox.WordAddIn
             cyjl.Show();
         }
 
-        private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, RibbonControlEventArgs e)
-        {
-            frmLangrecognize frmLangrecognize = new frmLangrecognize();
-            frmLangrecognize.Show();
-        }
-
         private void button13_Click(object sender, RibbonControlEventArgs e)
         {
-            frmeachtoone test = new frmeachtoone() ;
+            frmEachToOne test = new frmEachToOne();
             test.Show();
         }
 
-        private void splitButton1_Click(object sender, RibbonControlEventArgs e)
+        private void splitAI_Click(object sender, RibbonControlEventArgs e)
         {
-            frmAIChat ChatBot = new frmAIChat();
-            ChatBot.Show();
+            TaskPaneShared.taskPane.Visible = true;
         }
+
+        private void btnSaveAsPDF_Click(object sender, RibbonControlEventArgs e)
+        {
+            frmWordToPDF wordToPDF = new frmWordToPDF();
+            wordToPDF.Show();
+        }
+
+        private void btnMassivePrint_Click(object sender, RibbonControlEventArgs e)
+        {
+            frmMassivePrint massivePrint = new frmMassivePrint();
+            massivePrint.Show();
+        }
+
+        private void button9_Click(object sender, RibbonControlEventArgs e)
+        {
+            frmWordCloud wordCloud = new frmWordCloud();
+            wordCloud.Show();
+        }
+    }
+    public static class TaskPaneShared
+    {
+        public static Microsoft.Office.Tools.CustomTaskPane taskPane;
     }
 }
 
-    
+
 

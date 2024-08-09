@@ -73,6 +73,7 @@ namespace SuperTextToolBox.WordAddIn
             {
                 toolStripStatusLabel1.Text = "正在转换";
                 textBox1.Text = Pinyin.GetString(richTextBox1.Text, PinyinFormat.Phonetic);
+                toolStripStatusLabel1.Text = "转换成功";
             }
         }
 

@@ -1,5 +1,4 @@
-﻿using Chinese;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -38,6 +37,7 @@ namespace SuperTextToolBox.WordAddIn
         }
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(richTextBox1.Text))
             {
                 MessageBox.Show("请输入文本");
@@ -60,53 +60,38 @@ namespace SuperTextToolBox.WordAddIn
                     if (comboBox3.Text == "普通")
                     {
                         toolStripStatusLabel1.Text = "翻译中";
-                        if ((from != "zh" && to != "繁体中文") || (from != "繁体中文" && to != "zh"))
+                        string sign = EncryptString(appId + q + salt + secretKey);
+                        string url = "http://api.fanyi.baidu.com/api/trans/vip/translate?";
+                        url += "q=" + HttpUtility.UrlEncode(q);
+                        url += "&from=" + from;
+                        url += "&to=" + to;
+                        url += "&appid=" + appId;
+                        url += "&salt=" + salt;
+                        url += "&sign=" + sign;
+                        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                        request.Method = "GET";
+                        request.ContentType = "text/html;charset=UTF-8";
+                        request.UserAgent = null;
+                        request.Timeout = 60000;
+                        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                        Stream myResponseStream = response.GetResponseStream();
+                        StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
+                        string retString = myStreamReader.ReadToEnd();
+                        myStreamReader.Close();
+                        myResponseStream.Close();
+                        Console.WriteLine(retString);
+                        Console.ReadLine();
+                        textBox1.Clear();
+                        PostResult res = JsonConvert.DeserializeObject<PostResult>(retString);
+                        if (res.Error_code == null)
                         {
-                            string sign = EncryptString(appId + q + salt + secretKey);
-                            string url = "http://api.fanyi.baidu.com/api/trans/vip/translate?";
-                            url += "q=" + HttpUtility.UrlEncode(q);
-                            url += "&from=" + from;
-                            url += "&to=" + to;
-                            url += "&appid=" + appId;
-                            url += "&salt=" + salt;
-                            url += "&sign=" + sign;
-                            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                            request.Method = "GET";
-                            request.ContentType = "text/html;charset=UTF-8";
-                            request.UserAgent = null;
-                            request.Timeout = 60000;
-                            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                            Stream myResponseStream = response.GetResponseStream();
-                            StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
-                            string retString = myStreamReader.ReadToEnd();
-                            myStreamReader.Close();
-                            myResponseStream.Close();
-                            Console.WriteLine(retString);
-                            Console.ReadLine();
-                            textBox1.Clear();
-                            PostResult res = JsonConvert.DeserializeObject<PostResult>(retString);
-                            if (res.Error_code == null)
-                            {
-                                textBox1.AppendText(res.Trans_result[0].Dst);
-                                toolStripStatusLabel1.Text = "翻译成功";
-                            }
-                            else
-                            {
-                                textBox1.AppendText(res.Error_msg);
-                                toolStripStatusLabel1.Text = "出现错误";
-                            }
-                        }
-
-                        else if (from == "zh" && to == "繁体中文")
-                        {
-                            textBox1.Text = ChineseConverter.ToTraditional(richTextBox1.Text);
+                            textBox1.AppendText(res.Trans_result[0].Dst);
                             toolStripStatusLabel1.Text = "翻译成功";
                         }
-                        else if (from == "繁体中文" && to == "zh")
+                        else
                         {
-                            textBox1.Text = ChineseConverter.ToSimplified(richTextBox1.Text);
-                            toolStripStatusLabel1.Text = "翻译成功";
-
+                            textBox1.AppendText(res.Error_msg);
+                            toolStripStatusLabel1.Text = "出现错误，请检查API密钥和网络";
                         }
                     }
                     else
@@ -156,7 +141,7 @@ namespace SuperTextToolBox.WordAddIn
                 }
 
             }
-                Focus();
+            Focus();
         }
         public class PostResult
         {
@@ -284,6 +269,7 @@ namespace SuperTextToolBox.WordAddIn
         {
             Selection sel = Globals.ThisAddIn.Application.Selection;
             richTextBox1.Text = sel.Text;
+
         }
     }
 }
