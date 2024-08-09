@@ -414,6 +414,7 @@
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="SuperTextToolBox.WordAddIn_TemporaryKey.pfx" />
     <None Include="SuperWordAddIn_TemporaryKey.pfx" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.cs</DependentUpon>
@@ -455,16 +456,16 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>SuperWordAddIn_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>SuperTextToolBox.WordAddIn_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>C6CE34C001DEAC7D05CC5006DE196CE34B456322</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>75DE7C0FAB8ABB9F03BEED3B1AFCBC6580B60AC2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>SuperWordAddIn_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>SuperTextToolBox.WordAddIn_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />

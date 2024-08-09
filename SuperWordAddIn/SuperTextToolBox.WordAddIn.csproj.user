@@ -9,4 +9,8 @@
     <InstallUrlHistory />
     <SupportUrlHistory />
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>D:\Program Files\WPS\ksolaunch.exe</StartProgram>
+  </PropertyGroup>
 </Project>
