@@ -5,7 +5,6 @@ using System.Windows.Forms;
 using PaddleOCRSharp;
 using System.Diagnostics;
 using OfficeOpenXml;
-using OCRFull;
 using System.Collections.Generic;
 using System.IO;
 
@@ -133,25 +132,33 @@ namespace SuperTextToolBox.OCRTool
                     { Directory.CreateDirectory(Environment.CurrentDirectory + "\\out"); }
                     string savefile = $"{Environment.CurrentDirectory}\\out\\{name}.html";
                     File.WriteAllText(savefile, result);
-                    using (var package = new ExcelPackage())
+                    try
                     {
-                        var worksheet = package.Workbook.Worksheets.Add("Sheet1");
-                        var htmlTable = new HtmlAgilityPack.HtmlDocument();
-                        htmlTable.LoadHtml(result);
-                        var table = htmlTable.DocumentNode.SelectSingleNode("//table");
-                        int row = 1, col = 1;
-                        foreach (var tr in table.SelectNodes(".//tr"))
+                        using (var package = new ExcelPackage())
                         {
-                            col = 1;
-                            foreach (var td in tr.SelectNodes(".//td|.//th"))
+                            var worksheet = package.Workbook.Worksheets.Add("Sheet1");
+                            var htmlTable = new HtmlAgilityPack.HtmlDocument();
+                            htmlTable.LoadHtml(result);
+                            var table = htmlTable.DocumentNode.SelectSingleNode("//table");
+                            int row = 1, col = 1;
+                            foreach (var tr in table.SelectNodes(".//tr"))
                             {
-                                worksheet.Cells[row, col].Value = td.InnerText;
-                                col++;
+                                col = 1;
+                                foreach (var td in tr.SelectNodes(".//td|.//th"))
+                                {
+                                    worksheet.Cells[row, col].Value = td.InnerText;
+                                    col++;
+                                }
+                                row++;
                             }
-                            row++;
+                            saveFileDialog1.ShowDialog();
+                            package.SaveAs(saveFileDialog2.FileName);
                         }
-                        saveFileDialog1.ShowDialog();
-                        package.SaveAs(saveFileDialog2.FileName);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("保存为xlsx失败，已经为您保存好html格式，修复可以试试在控制面板找到程序和功能-打开或关闭Windows功能，打开NetFramwork3.5");
+                        toolStripStatusLabel1.Text = "未完全成功";
                     }
 
 
