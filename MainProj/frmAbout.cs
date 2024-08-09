@@ -5,10 +5,7 @@ namespace SuperTextToolBox
 {
     public partial class frmAbout : Sunny.UI.UIForm
     {
-        public frmAbout()
-        {
-            InitializeComponent();
-        }
+        public frmAbout() => InitializeComponent();
         private void button1_Click(object sender, EventArgs e) => Close();
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://github.com/QiBowen2008/SuperTextToolBox");
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://github.com/QiBowen2008/SuperCalc-Made-of-VB6");
@@ -26,5 +23,7 @@ namespace SuperTextToolBox
         private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://gitee.com/yhuse/SunnyUI");
         private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://www.apache.org/licenses/LICENSE-2.0.html");
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://licenses.nuget.org/GPL-3.0-only");
+        private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://licenses.nuget.org/MIT");
+        private void linkLabel23_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("http://html-agility-pack.net/");
     }
 }

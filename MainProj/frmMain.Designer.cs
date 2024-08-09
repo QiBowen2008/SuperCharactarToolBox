@@ -40,7 +40,6 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.离线图片转文字 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.语种识别ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.成语接龙ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
@@ -52,7 +51,6 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiButton3 = new Sunny.UI.UIButton();
-            this.uiButton4 = new Sunny.UI.UIButton();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -110,76 +108,68 @@
             this.toolStripMenuItem3,
             this.离线图片转文字,
             this.toolStripMenuItem4,
-            this.语种识别ToolStripMenuItem,
             this.toolStripMenuItem5,
             this.成语接龙ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 232);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 236);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(187, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
             // 
             // toolStriptranslate
             // 
             this.toolStriptranslate.Name = "toolStriptranslate";
-            this.toolStriptranslate.Size = new System.Drawing.Size(190, 24);
+            this.toolStriptranslate.Size = new System.Drawing.Size(210, 24);
             this.toolStriptranslate.Text = "在线翻译";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem1.Text = "离线文字转拼音";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(190, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem2.Text = "离线文字转语音";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(190, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem3.Text = "离线中文分词";
             // 
             // 离线图片转文字
             // 
             this.离线图片转文字.Name = "离线图片转文字";
-            this.离线图片转文字.Size = new System.Drawing.Size(190, 24);
+            this.离线图片转文字.Size = new System.Drawing.Size(210, 24);
             this.离线图片转文字.Text = "离线图片转文字";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(190, 24);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem4.Text = "离线词云生成";
-            // 
-            // 语种识别ToolStripMenuItem
-            // 
-            this.语种识别ToolStripMenuItem.Name = "语种识别ToolStripMenuItem";
-            this.语种识别ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.语种识别ToolStripMenuItem.Text = "语种识别";
-            this.语种识别ToolStripMenuItem.Click += new System.EventHandler(this.uiButton4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(187, 6);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(207, 6);
             // 
             // 成语接龙ToolStripMenuItem
             // 
             this.成语接龙ToolStripMenuItem.Name = "成语接龙ToolStripMenuItem";
-            this.成语接龙ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.成语接龙ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.成语接龙ToolStripMenuItem.Text = "成语接龙";
             this.成语接龙ToolStripMenuItem.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -352,7 +342,7 @@
             this.uiButton1.Location = new System.Drawing.Point(124, 375);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Size = new System.Drawing.Size(175, 55);
+            this.uiButton1.Size = new System.Drawing.Size(371, 55);
             this.uiButton1.TabIndex = 17;
             this.uiButton1.Text = "文字游戏：成语接龙";
             this.uiButton1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -384,19 +374,6 @@
             this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton3.Click += new System.EventHandler(this.button9_Click);
             // 
-            // uiButton4
-            // 
-            this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton4.Location = new System.Drawing.Point(315, 375);
-            this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton4.Name = "uiButton4";
-            this.uiButton4.Size = new System.Drawing.Size(179, 55);
-            this.uiButton4.TabIndex = 20;
-            this.uiButton4.Text = "语种识别";
-            this.uiButton4.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton4.Click += new System.EventHandler(this.uiButton4_Click);
-            // 
             // uiButton5
             // 
             this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -416,7 +393,6 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(616, 530);
             this.Controls.Add(this.uiButton5);
-            this.Controls.Add(this.uiButton4);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);
@@ -469,9 +445,7 @@
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIButton uiButton3;
-        private Sunny.UI.UIButton uiButton4;
         private Sunny.UI.UIButton uiButton5;
-        private System.Windows.Forms.ToolStripMenuItem 语种识别ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem 成语接龙ToolStripMenuItem;
     }

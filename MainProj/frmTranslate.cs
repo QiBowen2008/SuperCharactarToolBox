@@ -155,7 +155,7 @@ namespace SuperTextToolBox
                 }
 
             }
-                Focus();
+            Focus();
         }
         public class PostResult
         {

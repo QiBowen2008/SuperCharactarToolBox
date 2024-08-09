@@ -7,7 +7,7 @@ namespace SuperTextToolBox
 {
     internal static class Program
     {
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        [DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
         /// <summary>
         /// 应用程序的主入口点。

@@ -61,11 +61,12 @@ namespace SuperTextToolBox
             try
             {
                 Process.Start("WordCloudApp.exe");
-            }catch
+            }
+            catch
             {
                 MessageBox.Show("必要文件丢失，请重新下载软件");
             }
-                }
+        }
         private void button8_Click(object sender, EventArgs e)
         {
             frmCyjl cyjl = new frmCyjl();
@@ -99,15 +100,9 @@ namespace SuperTextToolBox
                 WindowState = FormWindowState.Normal;
             }
         }
-        private void uiButton4_Click(object sender, EventArgs e)
-        {
-            frmLangrecognize frmLangrecognize = new frmLangrecognize();
-            frmLangrecognize.Show();
-        }
-
         private void uiButton5_Click(object sender, EventArgs e)
         {
-            Process.Start(Application .StartupPath +"\\help.chm");
+            Process.Start(Application.StartupPath + "\\help.chm");
         }
     }
 }

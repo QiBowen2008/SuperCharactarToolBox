@@ -88,7 +88,7 @@
             this.label1.Location = new System.Drawing.Point(50, 48);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 27);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "原文";
             // 
@@ -98,7 +98,7 @@
             this.label2.Location = new System.Drawing.Point(52, 274);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 27);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "翻译结果";
             // 
@@ -132,7 +132,7 @@
             this.label4.Location = new System.Drawing.Point(200, 36);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 27);
+            this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "语速";
             // 
@@ -142,7 +142,7 @@
             this.label3.Location = new System.Drawing.Point(19, 36);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 27);
+            this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "音量";
             // 
@@ -413,8 +413,9 @@
             this.comboBox1.Location = new System.Drawing.Point(473, 79);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 35);
+            this.comboBox1.Size = new System.Drawing.Size(137, 28);
             this.comboBox1.TabIndex = 15;
+            this.comboBox1.Text = "en";
             // 
             // comboBox2
             // 
@@ -625,8 +626,9 @@
             this.comboBox2.Location = new System.Drawing.Point(473, 149);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 35);
+            this.comboBox2.Size = new System.Drawing.Size(137, 28);
             this.comboBox2.TabIndex = 16;
+            this.comboBox2.Text = "zh";
             // 
             // label5
             // 
@@ -634,7 +636,7 @@
             this.label5.Location = new System.Drawing.Point(471, 48);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 27);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "源语言";
             // 
@@ -644,7 +646,7 @@
             this.label6.Location = new System.Drawing.Point(471, 118);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 27);
+            this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 18;
             this.label6.Text = "目标语言";
             // 
@@ -654,7 +656,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(471, 199);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(172, 27);
+            this.linkLabel1.Size = new System.Drawing.Size(169, 20);
             this.linkLabel1.TabIndex = 19;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "查看语言字母列表";
@@ -665,7 +667,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(473, 518);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 27);
+            this.label7.Size = new System.Drawing.Size(89, 20);
             this.label7.TabIndex = 20;
             this.label7.Text = "领域选择";
             // 
@@ -687,7 +689,7 @@
             "contract"});
             this.comboBox3.Location = new System.Drawing.Point(474, 571);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(136, 35);
+            this.comboBox3.Size = new System.Drawing.Size(136, 28);
             this.comboBox3.TabIndex = 21;
             this.comboBox3.Text = "普通";
             // 
@@ -696,7 +698,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Location = new System.Drawing.Point(471, 542);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(172, 27);
+            this.linkLabel2.Size = new System.Drawing.Size(169, 20);
             this.linkLabel2.TabIndex = 22;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "查看数字对应列表";
@@ -841,6 +843,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(654, 652);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(97)))), ((int)(((byte)(198)))));
             this.Controls.Add(this.ucBtnExt5);
@@ -866,7 +869,7 @@
             this.MaximizeBox = false;
             this.Name = "frmTranslate";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.Style = Sunny.UI.UIStyle.Purple;
+            this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "翻译";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 641, 596);
