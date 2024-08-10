@@ -48,7 +48,7 @@ namespace SuperTextToolBox
         {
             try
             {
-                Process.Start("OCR.exe");
+                Process.Start("SuperTextToolBox.OCRTool.exe");
             }
             catch
             {
@@ -60,7 +60,7 @@ namespace SuperTextToolBox
         {
             try
             {
-                Process.Start("WordCloudApp.exe");
+                Process.Start("SuperTextToolBox.WordCloudTool.exe");
             }
             catch
             {
