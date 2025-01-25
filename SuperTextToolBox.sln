@@ -2,14 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35111.106
-MinimumVisualStudioVersion = 1.0.40219.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTextToolBox", "SuperTextToolBox\SuperTextToolBox.csproj", "{A59F9ACA-8CE0-454E-9625-BB99A8C86963}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTextToolBox.WordAddIn", "SuperTextToolBox.WordAddIn\SuperTextToolBox.WordAddIn.csproj", "{C02FD645-0AB8-4E5C-933C-FE5E3886AFE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTextToolBox.OCRTool", "SuperTextToolBox.OCRTool\SuperTextToolBox.OCRTool.csproj", "{4F6097AA-B3C5-472F-A40E-A9ED9F6D116C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTextToolBox.WordCloudTool", "SuperTextToolBox.WordCloud\SuperTextToolBox.WordCloudTool.csproj", "{71960F62-048A-473F-B6D1-F90DAFC0516F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTextToolBox.WordCloudTool", "SuperTextToolBox.WordCloudTool\SuperTextToolBox.WordCloudTool.csproj", "{71960F62-048A-473F-B6D1-F90DAFC0516F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{48039F47-E142-45A5-A48E-6F2989FFB8F4}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 		翻译.rtf = 翻译.rtf
 		翻译领域.rtf = 翻译领域.rtf
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointAddIn1", "PowerPointAddIn1\PowerPointAddIn1.csproj", "{F854B59A-188A-420E-B801-1709424BC121}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,18 +76,6 @@ Global
 		{71960F62-048A-473F-B6D1-F90DAFC0516F}.Release|x64.Build.0 = Release|Any CPU
 		{71960F62-048A-473F-B6D1-F90DAFC0516F}.Release|x86.ActiveCfg = Release|Any CPU
 		{71960F62-048A-473F-B6D1-F90DAFC0516F}.Release|x86.Build.0 = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|x64.Build.0 = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Debug|x86.Build.0 = Debug|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|x64.ActiveCfg = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|x64.Build.0 = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|x86.ActiveCfg = Release|Any CPU
-		{F854B59A-188A-420E-B801-1709424BC121}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
