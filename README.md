@@ -16,7 +16,7 @@
 # 一、软件介绍
 
 本款软件基于Github上各种开源库制作而成（几乎没有什么代码研究价值），免费实现各种文字处理功能。包括OCR识别、文字转语音、词云生成、文字转拼音、翻译、分词等功能（除了翻译功能均可以离线使用）欢迎下载体验。
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/1.PNG?raw=true)
+![以下图片均为老版本，新版本更好看](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/1.PNG?raw=true)
 # 二、功能介绍
 
 ## 1、OCR识别（64bit）
