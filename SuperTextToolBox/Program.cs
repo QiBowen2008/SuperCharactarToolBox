@@ -17,8 +17,6 @@ namespace SuperTextToolBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (Environment.OSVersion.Version.Major >= 6)
-                SetProcessDPIAware();
             Application.Run(new frmMain());
         }
     }
