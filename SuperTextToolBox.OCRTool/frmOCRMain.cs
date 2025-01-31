@@ -32,20 +32,39 @@ namespace SuperTextToolBox.OCRTool
             if (Environment.GetCommandLineArgs().Length > 1)
             {
                 string imagePath = Environment.GetCommandLineArgs()[1];
-                pictureBox1.Image = Image.FromFile(imagePath);
+                uiDataGridView1.Rows.Add(imagePath, "待转换");
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            uiComboBox1.Text = "中英文精简（自带）";
-            if (canshu.fromword == true)
+            // 获取当前DPI比例
+            float dpiX, dpiY;
+            using (Graphics g = CreateGraphics())
             {
-                pictureBox1.Image = Image.FromFile(canshu.path);
+                dpiX = g.DpiX;
+                dpiY = g.DpiY;
             }
+            // 根据DPI比例调整控件尺寸
+            float scaleFactor = dpiX / 96f; // 96 DPI 是标准DPI
+            foreach (Control control in Controls)
+            {
+                control.Width = (int)(control.Width * scaleFactor);
+                control.Height = (int)(control.Height * scaleFactor);
+                control.Left = (int)(control.Left * scaleFactor);
+                control.Top = (int)(control.Top * scaleFactor);
+                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+            }
+            Height = (int)(Height * scaleFactor);
+            Width = (int)(Width * scaleFactor);
+            titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
+            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
+            FileName.Width = (int)(FileName.Width * scaleFactor);
+            Status.Width = (int)(Status.Width * scaleFactor);
+            uiComboBox1.Text = "中英文精简（自带）";
         }
 
-        private void OCR(string imagepath, string type)
+        private string OCR(string imagepath, string type, string path)
         {
             try
             {
@@ -55,7 +74,7 @@ namespace SuperTextToolBox.OCRTool
                 toolStripStatusLabel1.Text = "识别中";
 
                 //使用默认中英文V3模型
-                pictureBox1.Image = Image.FromFile(imagepath);
+
                 xlsxconfig.table_char_dict_path = modelPathroot + @"\table_structure_dict_ch.txt";
                 if (uiComboBox1.Text == "中英文精简（自带）")
                 {
@@ -107,12 +126,18 @@ namespace SuperTextToolBox.OCRTool
                     OCRResult ocrResult = new OCRResult();
                     //建议程序全局初始化一次即可，不必每次识别都初始化，容易报错。     
                     PaddleOCREngine engine = new PaddleOCREngine(config, oCRParameter);
-                    ocrResult = engine.DetectText(imagepath);
+                    ocrResult = engine.DetectText(path);
+                    string result;
                     if (ocrResult != null)
                     {
-                        textBox1.Text = ocrResult.Text;
+                        result = ocrResult.Text;
+                    }
+                    else
+                    {
+                        result = "图片中无可识别文本";
                     }
                     engine.Dispose();
+                    return result;
                 }
                 else
                 {
@@ -156,21 +181,21 @@ namespace SuperTextToolBox.OCRTool
                                 package.SaveAs(saveFileDialog2.FileName);
                             }
                         }
+                        return "Successfully Saved";
                     }
                     catch
                     {
                         MessageBox.Show("保存为xlsx失败，已经为您保存好html格式，修复可以试试在控制面板找到程序和功能-打开或关闭Windows功能，打开NetFramwork3.5");
                         toolStripStatusLabel1.Text = "未完全成功";
+                        return "ERROR!";
                     }
-
-
                 }
-                toolStripStatusLabel1.Text = "成功";
             }
             catch (Exception ex)
             {
                 MessageBox.Show("出现错误，请检查是否下载了指定的模型，错误信息" + ex.Message);
                 toolStripStatusLabel1.Text = "错误";
+                return "ERROR!";
             }
 
         }
@@ -178,11 +203,14 @@ namespace SuperTextToolBox.OCRTool
         private void uiButton1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Multiselect = true;
             ofd.Filter = "图片|*.png;*.jpg;*.jpeg;*.tiff;*.bmp";
             if (ofd.ShowDialog() != DialogResult.OK) return;
-            canshu.path = ofd.FileName;
-            canshu.ocrtype = uiComboBox2.Text;
-            pictureBox1.Image = Image.FromFile(canshu.path);
+            uiButton3.Enabled = true;
+            foreach (string filename in ofd.FileNames)
+            {
+                uiDataGridView1.Rows.Add(filename, "待转换");
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -249,7 +277,32 @@ namespace SuperTextToolBox.OCRTool
 
         private void uiButton3_Click(object sender, EventArgs e)
         {
-            OCR(canshu.path, uiComboBox2 .Text );
+            uiButton3.Enabled = false;
+            if (uiCheckBox1.Checked == true)
+            {
+                folderBrowserDialog1.ShowDialog();
+            }
+            for (int i = 0; i < uiDataGridView1.Rows.Count - 1; i++)
+            {
+                DataGridViewRow row = uiDataGridView1.Rows[i];
+                if (uiCheckBox1.Checked == true)
+                {
+                    string eachresult = OCR(canshu.path, uiComboBox2.Text, (string)row.Cells["FileName"].Value);
+                    DateTime now = DateTime.Now;
+                    // 将时间转换为毫秒级的时间戳
+                    long milliseconds = now.Ticks / TimeSpan.TicksPerMillisecond;
+                    string outputFilePath = Path.Combine(folderBrowserDialog1.SelectedPath, milliseconds.ToString() + ".txt");
+                    StreamWriter sw = new StreamWriter(outputFilePath);
+                    sw.Write(eachresult);
+                    sw.Flush();
+                    sw.Dispose();
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + OCR(canshu.path, uiComboBox2.Text, (string)row.Cells["FileName"].Value);
+                }
+                row.Cells["Status"].Value = "转换成功";
+            }
         }
     }
 }

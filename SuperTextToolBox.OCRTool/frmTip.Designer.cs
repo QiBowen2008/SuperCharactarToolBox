@@ -30,7 +30,7 @@
         {
             this.uiButton1 = new Sunny.UI.UIButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new Sunny.UI.UITextBox();
             this.SuspendLayout();
             // 
             // uiButton1
@@ -85,6 +85,6 @@
 
         private Sunny.UI.UIButton uiButton1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private Sunny.UI.UITextBox textBox1;
     }
 }
