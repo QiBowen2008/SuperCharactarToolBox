@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new Sunny.UI.UITextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,7 +54,6 @@
             this.textBox1.Location = new System.Drawing.Point(27, 109);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(269, 265);
             this.textBox1.TabIndex = 1;
             // 
@@ -230,7 +229,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private Sunny.UI.UITextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;

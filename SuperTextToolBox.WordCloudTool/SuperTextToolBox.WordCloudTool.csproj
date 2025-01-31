@@ -28,7 +28,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\publish\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,9 +42,6 @@
     <StartupObject>SuperTextToolBox.WordCloudTool.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HZH_Controls, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HZH_Controls.1.5.240416\lib\net40\HZH_Controls.dll</HintPath>
-    </Reference>
     <Reference Include="JiebaNet.Analyser, Version=0.42.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jieba.NET.0.42.2\lib\net45\JiebaNet.Analyser.dll</HintPath>
     </Reference>
