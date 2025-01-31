@@ -25,62 +25,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new Sunny.UI.UITextBox();
+            this.textBox1 = new Sunny.UI.UITextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.trackBar2 = new Sunny.UI.UITrackBar();
+            this.trackBar1 = new Sunny.UI.UITrackBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new Sunny.UI.UIComboBox();
+            this.comboBox2 = new Sunny.UI.UIComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new Sunny.UI.UIComboBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt3 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt4 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt5 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucExt1 = new Sunny.UI.UIButton();
+            this.ucExt2 = new Sunny.UI.UIButton();
+            this.ucExt3 = new Sunny.UI.UIButton();
+            this.ucExt4 = new Sunny.UI.UIButton();
+            this.ucExt5 = new Sunny.UI.UIButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.EnableAutoDragDrop = true;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBox1.Location = new System.Drawing.Point(55, 79);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
+            this.richTextBox1.Multiline = true;
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.richTextBox1.ShowText = false;
             this.richTextBox1.Size = new System.Drawing.Size(391, 179);
             this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.richTextBox1.Watermark = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.Location = new System.Drawing.Point(55, 305);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.MinimumSize = new System.Drawing.Size(1, 16);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.textBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.textBox1.ShowText = false;
             this.textBox1.Size = new System.Drawing.Size(391, 184);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "";
+            this.textBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.textBox1.Watermark = "";
             // 
             // label1
             // 
@@ -113,10 +122,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.trackBar2);
             this.groupBox1.Controls.Add(this.trackBar1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(55, 506);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -125,6 +134,30 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "音频调节";
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trackBar2.Location = new System.Drawing.Point(260, 28);
+            this.trackBar2.Maximum = 10;
+            this.trackBar2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(113, 36);
+            this.trackBar2.TabIndex = 5;
+            this.trackBar2.Text = "uiTrackBar2";
+            this.trackBar2.Value = 5;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trackBar1.Location = new System.Drawing.Point(70, 34);
+            this.trackBar1.Maximum = 10;
+            this.trackBar1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(118, 31);
+            this.trackBar1.TabIndex = 4;
+            this.trackBar1.Text = "uiTrackBar1";
+            this.trackBar1.Value = 5;
             // 
             // label4
             // 
@@ -145,24 +178,6 @@
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "音量";
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Location = new System.Drawing.Point(245, 24);
-            this.trackBar2.Margin = new System.Windows.Forms.Padding(4);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(138, 56);
-            this.trackBar2.TabIndex = 1;
-            this.trackBar2.Value = 5;
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(64, 24);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(128, 56);
-            this.trackBar1.TabIndex = 0;
-            this.trackBar1.Value = 5;
             // 
             // statusStrip1
             // 
@@ -206,7 +221,11 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = null;
+            this.comboBox1.FillColor = System.Drawing.Color.White;
+            this.comboBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.comboBox1.Items.AddRange(new object[] {
             "ara",
             "alb",
@@ -410,16 +429,26 @@
             "ir",
             "wyw",
             "frm"});
+            this.comboBox1.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.comboBox1.Location = new System.Drawing.Point(473, 79);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.MinimumSize = new System.Drawing.Size(63, 0);
             this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.comboBox1.Size = new System.Drawing.Size(137, 28);
+            this.comboBox1.SymbolSize = 24;
             this.comboBox1.TabIndex = 15;
             this.comboBox1.Text = "en";
+            this.comboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.comboBox1.Watermark = "";
             // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = null;
+            this.comboBox2.FillColor = System.Drawing.Color.White;
+            this.comboBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.comboBox2.Items.AddRange(new object[] {
             "ara",
             "alb",
@@ -623,12 +652,18 @@
             "ir",
             "wyw",
             "frm"});
+            this.comboBox2.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.comboBox2.Location = new System.Drawing.Point(473, 149);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.MinimumSize = new System.Drawing.Size(63, 0);
             this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.comboBox2.Size = new System.Drawing.Size(137, 28);
+            this.comboBox2.SymbolSize = 24;
             this.comboBox2.TabIndex = 16;
             this.comboBox2.Text = "zh";
+            this.comboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.comboBox2.Watermark = "";
             // 
             // label5
             // 
@@ -673,7 +708,12 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DataSource = null;
+            this.comboBox3.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
+            this.comboBox3.FillColor = System.Drawing.Color.White;
+            this.comboBox3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.comboBox3.Items.AddRange(new object[] {
             "普通",
             "it",
@@ -687,11 +727,18 @@
             "news",
             "law",
             "contract"});
+            this.comboBox3.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.comboBox3.Location = new System.Drawing.Point(474, 571);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox3.MinimumSize = new System.Drawing.Size(63, 0);
             this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.comboBox3.Size = new System.Drawing.Size(136, 28);
+            this.comboBox3.SymbolSize = 24;
             this.comboBox3.TabIndex = 21;
             this.comboBox3.Text = "普通";
+            this.comboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.comboBox3.Watermark = "";
             // 
             // linkLabel2
             // 
@@ -704,140 +751,110 @@
             this.linkLabel2.Text = "查看数字对应列表";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // ucBtnExt1
+            // ucExt1
             // 
-            this.ucBtnExt1.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnText = "翻译";
-            this.ucBtnExt1.ConerRadius = 5;
-            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt1.EnabledMouseEffect = false;
-            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt1.IsRadius = true;
-            this.ucBtnExt1.IsShowRect = true;
-            this.ucBtnExt1.IsShowTips = false;
-            this.ucBtnExt1.Location = new System.Drawing.Point(473, 245);
-            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt1.Name = "ucBtnExt1";
-            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt1.RectWidth = 1;
-            this.ucBtnExt1.Size = new System.Drawing.Size(137, 29);
-            this.ucBtnExt1.TabIndex = 23;
-            this.ucBtnExt1.TabStop = false;
-            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt1.TipsText = "";
-            this.ucBtnExt1.BtnClick += new System.EventHandler(this.button1_Click);
+            this.ucExt1.BackColor = System.Drawing.Color.White;
+            this.ucExt1.BackColor = System.Drawing.Color.White;
+            this.ucExt1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt1.ForeColor = System.Drawing.Color.White;
+            this.ucExt1.Text = "翻译";
+            this.ucExt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucExt1.Font = new System.Drawing.Font("微软雅黑", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt1.Location = new System.Drawing.Point(473, 245);
+            this.ucExt1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt1.Name = "ucExt1";
+            this.ucExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucExt1.Size = new System.Drawing.Size(137, 29);
+            this.ucExt1.TabIndex = 23;
+            this.ucExt1.TabStop = false;
+            this.ucExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt1.TipsText = "";
+            this.ucExt1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ucBtnExt2
+            // ucExt2
             // 
-            this.ucBtnExt2.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnText = "打开文本文档";
-            this.ucBtnExt2.ConerRadius = 5;
-            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt2.EnabledMouseEffect = false;
-            this.ucBtnExt2.FillColor = System.Drawing.Color.Gold;
-            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt2.IsRadius = true;
-            this.ucBtnExt2.IsShowRect = true;
-            this.ucBtnExt2.IsShowTips = false;
-            this.ucBtnExt2.Location = new System.Drawing.Point(474, 296);
-            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt2.Name = "ucBtnExt2";
-            this.ucBtnExt2.RectColor = System.Drawing.Color.Gold;
-            this.ucBtnExt2.RectWidth = 1;
-            this.ucBtnExt2.Size = new System.Drawing.Size(136, 29);
-            this.ucBtnExt2.TabIndex = 24;
-            this.ucBtnExt2.TabStop = false;
-            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt2.TipsText = "";
-            this.ucBtnExt2.BtnClick += new System.EventHandler(this.button4_Click);
+            this.ucExt2.BackColor = System.Drawing.Color.White;
+            this.ucExt2.BackColor = System.Drawing.Color.White;
+            this.ucExt2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt2.ForeColor = System.Drawing.Color.White;
+            this.ucExt2.Text = "打开文本文档";
+            this.ucExt2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt2.FillColor = System.Drawing.Color.Gold;
+            this.ucExt2.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt2.Location = new System.Drawing.Point(474, 296);
+            this.ucExt2.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt2.Name = "ucExt2";
+            this.ucExt2.RectColor = System.Drawing.Color.Gold;
+            this.ucExt2.Size = new System.Drawing.Size(136, 29);
+            this.ucExt2.TabIndex = 24;
+            this.ucExt2.TabStop = false;
+            this.ucExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt2.TipsText = "";
+            this.ucExt2.Click += new System.EventHandler(this.button4_Click);
             // 
-            // ucBtnExt3
+            // ucExt3
             // 
-            this.ucBtnExt3.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt3.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnText = "保存翻译结果";
-            this.ucBtnExt3.ConerRadius = 5;
-            this.ucBtnExt3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt3.EnabledMouseEffect = false;
-            this.ucBtnExt3.FillColor = System.Drawing.Color.DodgerBlue;
-            this.ucBtnExt3.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt3.IsRadius = true;
-            this.ucBtnExt3.IsShowRect = true;
-            this.ucBtnExt3.IsShowTips = false;
-            this.ucBtnExt3.Location = new System.Drawing.Point(473, 350);
-            this.ucBtnExt3.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt3.Name = "ucBtnExt3";
-            this.ucBtnExt3.RectColor = System.Drawing.Color.DodgerBlue;
-            this.ucBtnExt3.RectWidth = 1;
-            this.ucBtnExt3.Size = new System.Drawing.Size(137, 29);
-            this.ucBtnExt3.TabIndex = 25;
-            this.ucBtnExt3.TabStop = false;
-            this.ucBtnExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt3.TipsText = "";
-            this.ucBtnExt3.BtnClick += new System.EventHandler(this.button3_Click);
+            this.ucExt3.BackColor = System.Drawing.Color.White;
+            this.ucExt3.BackColor = System.Drawing.Color.White;
+            this.ucExt3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt3.ForeColor = System.Drawing.Color.White;
+            this.ucExt3.Text = "保存翻译结果";
+            this.ucExt3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt3.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ucExt3.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt3.Location = new System.Drawing.Point(473, 350);
+            this.ucExt3.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt3.Name = "ucExt3";
+            this.ucExt3.RectColor = System.Drawing.Color.DodgerBlue;
+            this.ucExt3.Size = new System.Drawing.Size(137, 29);
+            this.ucExt3.TabIndex = 25;
+            this.ucExt3.TabStop = false;
+            this.ucExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt3.TipsText = "";
+            this.ucExt3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // ucBtnExt4
+            // ucExt4
             // 
-            this.ucBtnExt4.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt4.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnText = "朗读结果";
-            this.ucBtnExt4.ConerRadius = 5;
-            this.ucBtnExt4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt4.EnabledMouseEffect = false;
-            this.ucBtnExt4.FillColor = System.Drawing.Color.LimeGreen;
-            this.ucBtnExt4.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt4.IsRadius = true;
-            this.ucBtnExt4.IsShowRect = true;
-            this.ucBtnExt4.IsShowTips = false;
-            this.ucBtnExt4.Location = new System.Drawing.Point(473, 404);
-            this.ucBtnExt4.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt4.Name = "ucBtnExt4";
-            this.ucBtnExt4.RectColor = System.Drawing.Color.LimeGreen;
-            this.ucBtnExt4.RectWidth = 1;
-            this.ucBtnExt4.Size = new System.Drawing.Size(137, 29);
-            this.ucBtnExt4.TabIndex = 26;
-            this.ucBtnExt4.TabStop = false;
-            this.ucBtnExt4.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt4.TipsText = "";
-            this.ucBtnExt4.BtnClick += new System.EventHandler(this.button7_Click);
+            this.ucExt4.BackColor = System.Drawing.Color.White;
+            this.ucExt4.BackColor = System.Drawing.Color.White;
+            this.ucExt4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt4.ForeColor = System.Drawing.Color.White;
+            this.ucExt4.Text = "朗读结果";
+            this.ucExt4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt4.FillColor = System.Drawing.Color.LimeGreen;
+            this.ucExt4.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt4.Location = new System.Drawing.Point(473, 404);
+            this.ucExt4.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt4.Name = "ucExt4";
+            this.ucExt4.RectColor = System.Drawing.Color.LimeGreen;
+            this.ucExt4.Size = new System.Drawing.Size(137, 29);
+            this.ucExt4.TabIndex = 26;
+            this.ucExt4.TabStop = false;
+            this.ucExt4.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt4.TipsText = "";
+            this.ucExt4.Click += new System.EventHandler(this.button7_Click);
             // 
-            // ucBtnExt5
+            // ucExt5
             // 
-            this.ucBtnExt5.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt5.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnText = "保存结果音频";
-            this.ucBtnExt5.ConerRadius = 5;
-            this.ucBtnExt5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt5.EnabledMouseEffect = false;
-            this.ucBtnExt5.FillColor = System.Drawing.Color.BlueViolet;
-            this.ucBtnExt5.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt5.IsRadius = true;
-            this.ucBtnExt5.IsShowRect = true;
-            this.ucBtnExt5.IsShowTips = false;
-            this.ucBtnExt5.Location = new System.Drawing.Point(473, 460);
-            this.ucBtnExt5.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt5.Name = "ucBtnExt5";
-            this.ucBtnExt5.RectColor = System.Drawing.Color.BlueViolet;
-            this.ucBtnExt5.RectWidth = 1;
-            this.ucBtnExt5.Size = new System.Drawing.Size(137, 29);
-            this.ucBtnExt5.TabIndex = 26;
-            this.ucBtnExt5.TabStop = false;
-            this.ucBtnExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt5.TipsText = "";
-            this.ucBtnExt5.BtnClick += new System.EventHandler(this.button8_Click);
+            this.ucExt5.BackColor = System.Drawing.Color.White;
+            this.ucExt5.BackColor = System.Drawing.Color.White;
+            this.ucExt5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt5.ForeColor = System.Drawing.Color.White;
+            this.ucExt5.Text = "保存结果音频";
+            this.ucExt5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt5.FillColor = System.Drawing.Color.BlueViolet;
+            this.ucExt5.Font = new System.Drawing.Font("微软雅黑", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt5.Location = new System.Drawing.Point(473, 460);
+            this.ucExt5.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt5.Name = "ucExt5";
+            this.ucExt5.RectColor = System.Drawing.Color.BlueViolet;
+            this.ucExt5.Size = new System.Drawing.Size(137, 29);
+            this.ucExt5.TabIndex = 26;
+            this.ucExt5.TabStop = false;
+            this.ucExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt5.TipsText = "";
+            this.ucExt5.Click += new System.EventHandler(this.button8_Click);
             // 
             // frmTranslate
             // 
@@ -846,11 +863,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(654, 652);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(97)))), ((int)(((byte)(198)))));
-            this.Controls.Add(this.ucBtnExt5);
-            this.Controls.Add(this.ucBtnExt4);
-            this.Controls.Add(this.ucBtnExt3);
-            this.Controls.Add(this.ucBtnExt2);
-            this.Controls.Add(this.ucBtnExt1);
+            this.Controls.Add(this.ucExt5);
+            this.Controls.Add(this.ucExt4);
+            this.Controls.Add(this.ucExt3);
+            this.Controls.Add(this.ucExt2);
+            this.Controls.Add(this.ucExt1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label7);
@@ -873,10 +890,9 @@
             this.Text = "翻译";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 641, 596);
+            this.Load += new System.EventHandler(this.frmTranslate_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -884,8 +900,8 @@
 
         }
         #endregion
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox textBox1;
+        private Sunny.UI.UITextBox richTextBox1;
+        private Sunny.UI.UITextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
@@ -893,12 +909,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private Sunny.UI.UIComboBox comboBox1;
+        private Sunny.UI.UIComboBox comboBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
@@ -906,12 +920,14 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private Sunny.UI.UIComboBox comboBox3;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt2;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt3;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt4;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt5;
+        private Sunny.UI.UIButton ucExt1;
+        private Sunny.UI.UIButton ucExt2;
+        private Sunny.UI.UIButton ucExt3;
+        private Sunny.UI.UIButton ucExt4;
+        private Sunny.UI.UIButton ucExt5;
+        private Sunny.UI.UITrackBar trackBar2;
+        private Sunny.UI.UITrackBar trackBar1;
     }
 }

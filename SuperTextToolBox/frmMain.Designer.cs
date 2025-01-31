@@ -42,12 +42,12 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.成语接龙ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt3 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt4 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt5 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt6 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucExt1 = new Sunny.UI.UIButton();
+            this.ucExt2 = new Sunny.UI.UIButton();
+            this.ucExt3 = new Sunny.UI.UIButton();
+            this.ucExt4 = new Sunny.UI.UIButton();
+            this.ucExt5 = new Sunny.UI.UIButton();
+            this.ucExt6 = new Sunny.UI.UIButton();
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiButton3 = new Sunny.UI.UIButton();
@@ -174,176 +174,128 @@
             this.成语接龙ToolStripMenuItem.Text = "成语接龙";
             this.成语接龙ToolStripMenuItem.Click += new System.EventHandler(this.button8_Click);
             // 
-            // ucBtnExt1
+            // ucExt1
             // 
-            this.ucBtnExt1.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnText = "在线翻译";
-            this.ucBtnExt1.ConerRadius = 10;
-            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt1.EnabledMouseEffect = false;
-            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt1.IsRadius = true;
-            this.ucBtnExt1.IsShowRect = true;
-            this.ucBtnExt1.IsShowTips = false;
-            this.ucBtnExt1.Location = new System.Drawing.Point(124, 142);
-            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt1.Name = "ucBtnExt1";
-            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt1.RectWidth = 1;
-            this.ucBtnExt1.Size = new System.Drawing.Size(175, 71);
-            this.ucBtnExt1.TabIndex = 13;
-            this.ucBtnExt1.TabStop = false;
-            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt1.TipsText = "";
-            this.ucBtnExt1.BtnClick += new System.EventHandler(this.button4_Click);
+            this.ucExt1.BackColor = System.Drawing.Color.White;
+            this.ucExt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucExt1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt1.Location = new System.Drawing.Point(115, 142);
+            this.ucExt1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt1.Name = "ucExt1";
+            this.ucExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucExt1.Size = new System.Drawing.Size(184, 71);
+            this.ucExt1.TabIndex = 13;
+            this.ucExt1.TabStop = false;
+            this.ucExt1.Text = "在线翻译";
+            this.ucExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt1.Click += new System.EventHandler(this.button4_Click);
             // 
-            // ucBtnExt2
+            // ucExt2
             // 
-            this.ucBtnExt2.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnText = "离线文字转拼音";
-            this.ucBtnExt2.ConerRadius = 10;
-            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt2.EnabledMouseEffect = false;
-            this.ucBtnExt2.FillColor = System.Drawing.Color.DodgerBlue;
-            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt2.IsRadius = true;
-            this.ucBtnExt2.IsShowRect = true;
-            this.ucBtnExt2.IsShowTips = false;
-            this.ucBtnExt2.Location = new System.Drawing.Point(315, 142);
-            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt2.Name = "ucBtnExt2";
-            this.ucBtnExt2.RectColor = System.Drawing.Color.DodgerBlue;
-            this.ucBtnExt2.RectWidth = 1;
-            this.ucBtnExt2.Size = new System.Drawing.Size(180, 71);
-            this.ucBtnExt2.TabIndex = 14;
-            this.ucBtnExt2.TabStop = false;
-            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt2.TipsText = "";
-            this.ucBtnExt2.BtnClick += new System.EventHandler(this.button1_Click_2);
+            this.ucExt2.BackColor = System.Drawing.Color.White;
+            this.ucExt2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt2.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ucExt2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt2.Location = new System.Drawing.Point(315, 142);
+            this.ucExt2.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt2.Name = "ucExt2";
+            this.ucExt2.RectColor = System.Drawing.Color.DodgerBlue;
+            this.ucExt2.Size = new System.Drawing.Size(180, 71);
+            this.ucExt2.TabIndex = 14;
+            this.ucExt2.TabStop = false;
+            this.ucExt2.Text = "离线文字转拼音";
+            this.ucExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt2.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // ucBtnExt3
+            // ucExt3
             // 
-            this.ucBtnExt3.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt3.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnText = "离线文字转语音";
-            this.ucBtnExt3.ConerRadius = 10;
-            this.ucBtnExt3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt3.EnabledMouseEffect = false;
-            this.ucBtnExt3.FillColor = System.Drawing.Color.LimeGreen;
-            this.ucBtnExt3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt3.IsRadius = true;
-            this.ucBtnExt3.IsShowRect = true;
-            this.ucBtnExt3.IsShowTips = false;
-            this.ucBtnExt3.Location = new System.Drawing.Point(124, 218);
-            this.ucBtnExt3.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt3.Name = "ucBtnExt3";
-            this.ucBtnExt3.RectColor = System.Drawing.Color.LimeGreen;
-            this.ucBtnExt3.RectWidth = 1;
-            this.ucBtnExt3.Size = new System.Drawing.Size(175, 71);
-            this.ucBtnExt3.TabIndex = 15;
-            this.ucBtnExt3.TabStop = false;
-            this.ucBtnExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt3.TipsText = "";
-            this.ucBtnExt3.BtnClick += new System.EventHandler(this.button2_Click);
+            this.ucExt3.BackColor = System.Drawing.Color.White;
+            this.ucExt3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt3.FillColor = System.Drawing.Color.LimeGreen;
+            this.ucExt3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt3.Location = new System.Drawing.Point(115, 218);
+            this.ucExt3.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt3.Name = "ucExt3";
+            this.ucExt3.RectColor = System.Drawing.Color.LimeGreen;
+            this.ucExt3.Size = new System.Drawing.Size(184, 71);
+            this.ucExt3.TabIndex = 15;
+            this.ucExt3.TabStop = false;
+            this.ucExt3.Text = "离线文字转语音";
+            this.ucExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt3.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt3.Click += new System.EventHandler(this.button2_Click);
             // 
-            // ucBtnExt4
+            // ucExt4
             // 
-            this.ucBtnExt4.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt4.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt4.BtnText = "离线中文分词";
-            this.ucBtnExt4.ConerRadius = 10;
-            this.ucBtnExt4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt4.EnabledMouseEffect = false;
-            this.ucBtnExt4.FillColor = System.Drawing.Color.Gold;
-            this.ucBtnExt4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt4.IsRadius = true;
-            this.ucBtnExt4.IsShowRect = true;
-            this.ucBtnExt4.IsShowTips = false;
-            this.ucBtnExt4.Location = new System.Drawing.Point(315, 218);
-            this.ucBtnExt4.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt4.Name = "ucBtnExt4";
-            this.ucBtnExt4.RectColor = System.Drawing.Color.Gold;
-            this.ucBtnExt4.RectWidth = 1;
-            this.ucBtnExt4.Size = new System.Drawing.Size(180, 71);
-            this.ucBtnExt4.TabIndex = 15;
-            this.ucBtnExt4.TabStop = false;
-            this.ucBtnExt4.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt4.TipsText = "";
-            this.ucBtnExt4.BtnClick += new System.EventHandler(this.button5_Click);
+            this.ucExt4.BackColor = System.Drawing.Color.White;
+            this.ucExt4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt4.FillColor = System.Drawing.Color.Gold;
+            this.ucExt4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt4.Location = new System.Drawing.Point(315, 218);
+            this.ucExt4.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt4.Name = "ucExt4";
+            this.ucExt4.RectColor = System.Drawing.Color.Gold;
+            this.ucExt4.Size = new System.Drawing.Size(180, 71);
+            this.ucExt4.TabIndex = 15;
+            this.ucExt4.TabStop = false;
+            this.ucExt4.Text = "离线中文分词";
+            this.ucExt4.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt4.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt4.Click += new System.EventHandler(this.button5_Click);
             // 
-            // ucBtnExt5
+            // ucExt5
             // 
-            this.ucBtnExt5.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt5.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnText = "离线图片转文字（64bit）";
-            this.ucBtnExt5.ConerRadius = 10;
-            this.ucBtnExt5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt5.EnabledMouseEffect = false;
-            this.ucBtnExt5.FillColor = System.Drawing.Color.Orange;
-            this.ucBtnExt5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt5.IsRadius = true;
-            this.ucBtnExt5.IsShowRect = true;
-            this.ucBtnExt5.IsShowTips = false;
-            this.ucBtnExt5.Location = new System.Drawing.Point(124, 296);
-            this.ucBtnExt5.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt5.Name = "ucBtnExt5";
-            this.ucBtnExt5.RectColor = System.Drawing.Color.Orange;
-            this.ucBtnExt5.RectWidth = 1;
-            this.ucBtnExt5.Size = new System.Drawing.Size(175, 75);
-            this.ucBtnExt5.TabIndex = 16;
-            this.ucBtnExt5.TabStop = false;
-            this.ucBtnExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt5.TipsText = "";
-            this.ucBtnExt5.BtnClick += new System.EventHandler(this.button6_Click);
+            this.ucExt5.BackColor = System.Drawing.Color.White;
+            this.ucExt5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt5.FillColor = System.Drawing.Color.Orange;
+            this.ucExt5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt5.Location = new System.Drawing.Point(115, 296);
+            this.ucExt5.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt5.Name = "ucExt5";
+            this.ucExt5.RectColor = System.Drawing.Color.Orange;
+            this.ucExt5.Size = new System.Drawing.Size(184, 75);
+            this.ucExt5.TabIndex = 16;
+            this.ucExt5.TabStop = false;
+            this.ucExt5.Text = "离线图片转文字";
+            this.ucExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt5.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt5.Click += new System.EventHandler(this.button6_Click);
             // 
-            // ucBtnExt6
+            // ucExt6
             // 
-            this.ucBtnExt6.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt6.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt6.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt6.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt6.BtnText = "离线词云生成";
-            this.ucBtnExt6.ConerRadius = 10;
-            this.ucBtnExt6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt6.EnabledMouseEffect = false;
-            this.ucBtnExt6.FillColor = System.Drawing.Color.BlueViolet;
-            this.ucBtnExt6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt6.IsRadius = true;
-            this.ucBtnExt6.IsShowRect = true;
-            this.ucBtnExt6.IsShowTips = false;
-            this.ucBtnExt6.Location = new System.Drawing.Point(315, 296);
-            this.ucBtnExt6.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt6.Name = "ucBtnExt6";
-            this.ucBtnExt6.RectColor = System.Drawing.Color.BlueViolet;
-            this.ucBtnExt6.RectWidth = 1;
-            this.ucBtnExt6.Size = new System.Drawing.Size(180, 75);
-            this.ucBtnExt6.TabIndex = 16;
-            this.ucBtnExt6.TabStop = false;
-            this.ucBtnExt6.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt6.TipsText = "";
-            this.ucBtnExt6.BtnClick += new System.EventHandler(this.button7_Click);
+            this.ucExt6.BackColor = System.Drawing.Color.White;
+            this.ucExt6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucExt6.FillColor = System.Drawing.Color.BlueViolet;
+            this.ucExt6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.ucExt6.Location = new System.Drawing.Point(315, 296);
+            this.ucExt6.Margin = new System.Windows.Forms.Padding(0);
+            this.ucExt6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ucExt6.Name = "ucExt6";
+            this.ucExt6.RectColor = System.Drawing.Color.BlueViolet;
+            this.ucExt6.Size = new System.Drawing.Size(180, 75);
+            this.ucExt6.TabIndex = 16;
+            this.ucExt6.TabStop = false;
+            this.ucExt6.Text = "离线词云生成";
+            this.ucExt6.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucExt6.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucExt6.Click += new System.EventHandler(this.button7_Click);
             // 
             // uiButton1
             // 
             this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(124, 375);
+            this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiButton1.Location = new System.Drawing.Point(115, 375);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Size = new System.Drawing.Size(175, 55);
+            this.uiButton1.Size = new System.Drawing.Size(184, 55);
             this.uiButton1.TabIndex = 17;
             this.uiButton1.Text = "文字游戏：成语接龙";
             this.uiButton1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -352,11 +304,11 @@
             // uiButton2
             // 
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(124, 436);
+            this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiButton2.Location = new System.Drawing.Point(115, 436);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
-            this.uiButton2.Size = new System.Drawing.Size(113, 37);
+            this.uiButton2.Size = new System.Drawing.Size(122, 37);
             this.uiButton2.TabIndex = 18;
             this.uiButton2.Text = "关于";
             this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -365,7 +317,7 @@
             // uiButton3
             // 
             this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiButton3.Location = new System.Drawing.Point(253, 436);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
@@ -378,7 +330,7 @@
             // uiButton5
             // 
             this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton5.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiButton5.Location = new System.Drawing.Point(382, 436);
             this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton5.Name = "uiButton5";
@@ -392,7 +344,7 @@
             // 
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.FillColor = System.Drawing.Color.Magenta;
-            this.uiButton4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton4.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiButton4.Location = new System.Drawing.Point(315, 375);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
@@ -407,18 +359,18 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(616, 530);
+            this.ClientSize = new System.Drawing.Size(616, 518);
             this.Controls.Add(this.uiButton4);
             this.Controls.Add(this.uiButton5);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);
-            this.Controls.Add(this.ucBtnExt6);
-            this.Controls.Add(this.ucBtnExt5);
-            this.Controls.Add(this.ucBtnExt4);
-            this.Controls.Add(this.ucBtnExt3);
-            this.Controls.Add(this.ucBtnExt2);
-            this.Controls.Add(this.ucBtnExt1);
+            this.Controls.Add(this.ucExt6);
+            this.Controls.Add(this.ucExt5);
+            this.Controls.Add(this.ucExt4);
+            this.Controls.Add(this.ucExt3);
+            this.Controls.Add(this.ucExt2);
+            this.Controls.Add(this.ucExt1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -428,7 +380,6 @@
             this.Name = "frmMain";
             this.ShowRect = false;
             this.Text = "欢迎";
-            this.ZoomScaleDisabled = true;
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 721, 519);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
@@ -446,12 +397,12 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt2;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt3;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt4;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt5;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt6;
+        private Sunny.UI.UIButton ucExt1;
+        private Sunny.UI.UIButton ucExt2;
+        private Sunny.UI.UIButton ucExt3;
+        private Sunny.UI.UIButton ucExt4;
+        private Sunny.UI.UIButton ucExt5;
+        private Sunny.UI.UIButton ucExt6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem toolStriptranslate;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;

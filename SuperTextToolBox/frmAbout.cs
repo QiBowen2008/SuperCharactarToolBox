@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 namespace SuperTextToolBox
 {
@@ -25,5 +26,6 @@ namespace SuperTextToolBox
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://licenses.nuget.org/GPL-3.0-only");
         private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://licenses.nuget.org/MIT");
         private void linkLabel23_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("http://html-agility-pack.net/");
+
     }
 }

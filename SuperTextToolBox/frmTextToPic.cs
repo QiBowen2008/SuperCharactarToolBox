@@ -7,9 +7,9 @@ using System.Diagnostics;
 using System.Text;
 using System.Drawing.Text;
 
-namespace SuperTextToolBox 
+namespace SuperTextToolBox
 {
-    public partial class frmTextToPic : Sunny .UI.UIForm
+    public partial class frmTextToPic : Sunny.UI.UIForm
     {
         public frmTextToPic()
         {
@@ -23,8 +23,8 @@ namespace SuperTextToolBox
         void Calc()
         {
             int textcountperpage = uiIntegerUpDown3.Value;
-            double size = uiIntegerUpDown4 .Value;
-            double allpx = Math.Pow((size + 1) / 72 * 96, 2)*textcountperpage ;
+            double size = uiIntegerUpDown4.Value;
+            double allpx = Math.Pow((size + 1) / 72 * 96, 2) * textcountperpage;
             int width = Convert.ToInt32(uiIntegerUpDown1.Value * Math.Sqrt(allpx / uiIntegerUpDown1.Value / uiIntegerUpDown2.Value));
             int height = Convert.ToInt32(uiIntegerUpDown2.Value * Math.Sqrt(allpx / uiIntegerUpDown1.Value / uiIntegerUpDown2.Value));
             PicInfo.weight = width;
@@ -50,9 +50,9 @@ namespace SuperTextToolBox
             return sb.ToString();
         }
 
-         void ConvertTextToImages(object sender,EventArgs e)
+        void ConvertTextToImages(object sender, EventArgs e)
         {
-            if(String .IsNullOrEmpty (textBox1 .Text )==false)
+            if (String.IsNullOrEmpty(textBox1.Text) == false)
             {
                 Calc();
                 // 读取文本文件
@@ -108,11 +108,12 @@ namespace SuperTextToolBox
 
                 }
                 Process.Start("explorer", @outputDirectory);
-            }else
+            }
+            else
             {
                 MessageBox.Show("请输入文本");
             }
-          
+
         }
 
         private void ChooseNovel(object sender, EventArgs e)
@@ -120,7 +121,7 @@ namespace SuperTextToolBox
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 novel = openFileDialog1.FileName;
-                noveltext = File.ReadAllText(@novel,Encoding.GetEncoding(0));
+                noveltext = File.ReadAllText(@novel, Encoding.GetEncoding(0));
                 textBox1.Text = noveltext;
                 count = textBox1.Text.Length / uiIntegerUpDown3.Value + 1;
                 if (count != 1)
@@ -137,8 +138,8 @@ namespace SuperTextToolBox
         public static int count;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
-            count = textBox1 .Text .Length / uiIntegerUpDown3 .Value +1;
+
+            count = textBox1.Text.Length / uiIntegerUpDown3.Value + 1;
             if (count != 1)
             {
                 label4.Text = "需要" + (count - 1).ToString() + "-" + count.ToString() + "张图片";
@@ -157,16 +158,37 @@ namespace SuperTextToolBox
             var fontFamilies = installedFonts.Families;
             foreach (var ttfname in fontFamilies)
             {
-                string ttfstr= ttfname.ToString();
+                string ttfstr = ttfname.ToString();
                 string newString = ttfstr.Substring(18);
                 string laststring = newString.Remove(newString.Length - 1, 1);
-                uiComboBox1.Items.Add(laststring );
+                uiComboBox1.Items.Add(laststring);
             }
+            // 获取当前DPI比例
+            float dpiX, dpiY;
+            using (Graphics g = CreateGraphics())
+            {
+                dpiX = g.DpiX;
+                dpiY = g.DpiY;
+            }
+            // 根据DPI比例调整控件尺寸
+            float scaleFactor = dpiX / 96f; // 96 DPI 是标准DPI
+            foreach (Control control in Controls)
+            {
+                control.Width = (int)(control.Width * scaleFactor);
+                control.Height = (int)(control.Height * scaleFactor);
+                control.Left = (int)(control.Left * scaleFactor);
+                control.Top = (int)(control.Top * scaleFactor);
+                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+            }
+            Height = (int)(Height * scaleFactor);
+            Width = (int)(Width * scaleFactor);
+            titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
+            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
         }
 
         private void uiIntegerUpDown3_ValueChanged(object sender, int value)
         {
-            
+
             count = textBox1.Text.Length / uiIntegerUpDown3.Value + 1;
             if (count != 1)
             {
@@ -186,6 +208,5 @@ namespace SuperTextToolBox
         public static string character;
         public static int allpx;
         public static int dpi;
-        
     }
 }

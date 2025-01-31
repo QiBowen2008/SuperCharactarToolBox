@@ -35,7 +35,7 @@
             this.uiCheckBox2 = new Sunny.UI.UICheckBox();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new Sunny.UI.UITextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
@@ -81,6 +81,7 @@
             this.tabPage1.Size = new System.Drawing.Size(653, 327);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "常规";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // uiGroupBox2
             // 
@@ -204,7 +205,7 @@
             this.tabPage2.Controls.Add(this.uiComboBox1);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(653, 327);
+            this.tabPage2.Size = new System.Drawing.Size(200, 60);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "翻译";
             // 
@@ -380,7 +381,7 @@
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private Sunny.UI.UIButton uiButton3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private Sunny.UI.UITextBox textBox2;
         private Sunny.UI.UIGroupBox uiGroupBox2;
         private Sunny.UI.UICheckBox uiCheckBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;

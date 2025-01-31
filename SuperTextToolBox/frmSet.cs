@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -64,13 +65,34 @@ namespace SuperTextToolBox
         }
         private void frmSet_Load(object sender, EventArgs e)
         {
+            // 获取当前DPI比例
+            float dpiX, dpiY;
+            using (Graphics g = CreateGraphics())
+            {
+                dpiX = g.DpiX;
+                dpiY = g.DpiY;
+            }
+            // 根据DPI比例调整控件尺寸
+            float scaleFactor = dpiX / 96f; // 96 DPI 是标准DPI
+            foreach (Control control in Controls)
+            {
+                control.Width = (int)(control.Width * scaleFactor);
+                control.Height = (int)(control.Height * scaleFactor);
+                control.Left = (int)(control.Left * scaleFactor);
+                control.Top = (int)(control.Top * scaleFactor);
+                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+            }
+            Height = (int)(Height * scaleFactor);
+            Width = (int)(Width * scaleFactor);
+            titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
+            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
             moveable = false;
             textBox2.Text = IniManager.getString("Set", "FileSavePath", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Set.INIpath);
             string autosave = IniManager.getString("Set", "AutoSave", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Set.INIpath);
-            if (autosave == "False")
-                uiCheckBox2.Checked = false;
-            else
+            if (autosave == "True")
                 uiCheckBox2.Checked = true;
+            else
+                uiCheckBox2.Checked = false;
         }
         public string[] oldpaths = new string[8];
         public string[] oldfiles = new string[3];
@@ -142,13 +164,18 @@ namespace SuperTextToolBox
             so.Close();
             st.Close();
         }
-    
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => Process.Start("https://developer.aliyun.com/article/1174048");
         public static bool moveable;
         private void uiButton3_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
                 textBox2.Text = folderBrowserDialog1.SelectedPath;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
