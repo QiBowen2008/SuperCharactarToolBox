@@ -17,18 +17,18 @@
 # 一、软件介绍
 
 本款软件基于Github上各种开源库制作而成（几乎没有什么代码研究价值），免费实现各种文字处理功能。包括OCR识别、文字转语音、词云生成、文字转拼音、翻译、分词等功能（除了翻译功能均可以离线使用）欢迎下载体验。
-![以下图片均为老版本，新版本更好看](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/1.PNG?raw=true)
+![已更新全新UI](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/1.PNG?raw=true)
 # 二、功能介绍
 
-## 1、OCR识别（64bit）
+## 1、OCR识别（64bit）（批量！）
 
 基于[PaddleOCRSharp](https://gitee.com/raoyutian/paddle-ocrsharp)开发，拥有很高的精确度（即使是位置杂乱无章的文本）。下图为示范图
-![OCR识别效果](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/6.PNG?raw=true)
+![OCR识别效果](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/6.gif?raw=true)
 
 ## 2、文字转语音
 
 基于微软自己的System.Speech库实现，支持较多语言，同时破处了某办公软件非会员不能导出的限制。
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/4.PNG?raw=true)
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/4.PNG?raw=true)
 
 ## 3、词云生成
 
@@ -37,21 +37,22 @@
 ## 4、文字转拼音
 
 基于[Chinese](https://github.com/zmjack/Chinese)库实现，无限制文字转拼音（解除了某办公软件非会员30个字的限制）
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/3.PNG?raw=true)
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/3.gif?raw=true)
 
 ## 5、翻译（在线，自己输入api）
 
 基于百度翻译，支持上百种语言，~~未来还可以进行指定领域翻译~~（现在已经可以了）
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/2.PNG?raw=true)
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/2.PNG?raw=true)
 
 ## 6、分词
 
 类似Jieba的分词功能
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/5.PNG?raw=true)
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/5.gif?raw=true)
 
 ## **7、Word插件（批量功能！）**
 
 在word中直接提供以上全部功能！同时附加了一些批量（批量打印，批量输出PDF）功能，自己体验！
+（WPS目前可能无法使用）
 
 ## **8、文字转图片**
 文字转为图片，防止文本被篡改，可以长文本输出多张图片，自定义每张图片字数
@@ -61,10 +62,12 @@
 他毕竟是当时全班第一的好学生，我成绩也还行没有收到太多惩罚，现在我决定改邪归正。可是，他的成绩下降了，我才想起一句话
 > 要允许学生上课看小说，要允许学生上课打瞌睡，要爱护学生身体，教员要少讲，要让学生多看。 毛泽东——《与王海蓉的谈话》
 
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/8.PNG?raw=true)
+
 ## 附加功能：成语接龙小游戏
 
 仔细玩一下你会发现没什么意思，不会成语一样玩。（正在修复这个Bug）
-![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/OldBranch/Pics/8.PNG?raw=true)
+![输入图片说明](https://github.com/QiBowen2008/SuperTextToolBox/blob/NewBranch/screenshots/9.PNG?raw=true)
 # 三、软件开发历程
 ## 创建缘由
 本人来自青岛西海岸新区，初中的时候新区有好政策，试行智慧教育，给每个中小学生发了一个平板，这也是我开始一切的地方。
@@ -87,7 +90,7 @@
 3.自定义词云生成
 4.修复成语接龙Bug
 5.增加~~Word和~~PowerPoint插件功能（word实现了）
-6.更好的支持高dpi
+6.更好的支持高dpi（目前已尽力适配）
 其实，这些并不一定能够实现，我还在筹划新的项目，要专门开发office插件，制作全网第一个高质量的office开源插件。
 # 四、编译注意
 这是4个工程，除去开发中的PowerPoint插件，你需要把四个工程的输出文件放到一个文件夹里，然后才能使用，还需要把OCR工程里的OCRModel了完全复制到文件夹里，还要把根目录的resource文件复制过去，最后别忘了根目录有4个图片也要复制进去，这样你就得到了绿色版软件
