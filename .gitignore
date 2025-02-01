@@ -1,0 +1,4 @@
+/publish/
+**/bin
+**/obj
+/src/packages
