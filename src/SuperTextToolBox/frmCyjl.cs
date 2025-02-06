@@ -28,12 +28,15 @@ namespace SuperTextToolBox
                 control.Height = (int)(control.Height * scaleFactor);
                 control.Left = (int)(control.Left * scaleFactor);
                 control.Top = (int)(control.Top * scaleFactor);
-                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+                if (control is Sunny .UI . UIComboBox comboBox)
+                {
+                    comboBox.ItemHeight = (int)(comboBox.ItemHeight * scaleFactor);
+                }
             }
-            Height = (int)(Height * scaleFactor);
-            Width = (int)(Width * scaleFactor);
+            Height = (int)(358 * scaleFactor);
+            Width = (int)(459 * scaleFactor);
             titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
-            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
+             
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {

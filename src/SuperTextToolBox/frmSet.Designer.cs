@@ -25,17 +25,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuperTextToolBox.Properties.Settings settings1 = new SuperTextToolBox.Properties.Settings();
+            SuperTextToolBox.Properties.Settings settings2 = new SuperTextToolBox.Properties.Settings();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.uiCheckBox1 = new Sunny.UI.UICheckBox();
-            this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
-            this.uiCheckBox2 = new Sunny.UI.UICheckBox();
-            this.uiButton3 = new Sunny.UI.UIButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new Sunny.UI.UITextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,10 +38,12 @@
             this.uiComboBox1 = new Sunny.UI.UIComboBox();
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
+            this.uiCheckBox2 = new Sunny.UI.UICheckBox();
+            this.uiButton3 = new Sunny.UI.UIButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new Sunny.UI.UITextBox();
             this.uiTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.uiGroupBox2.SuspendLayout();
-            this.uiGroupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,32 +70,17 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.tabPage1.Controls.Add(this.uiGroupBox2);
-            this.tabPage1.Controls.Add(this.uiGroupBox1);
+            this.tabPage1.Controls.Add(this.uiCheckBox1);
+            this.tabPage1.Controls.Add(this.uiCheckBox2);
+            this.tabPage1.Controls.Add(this.uiButton3);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(653, 327);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "常规";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // uiGroupBox2
-            // 
-            this.uiGroupBox2.Controls.Add(this.uiCheckBox1);
-            this.uiGroupBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.uiGroupBox2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.uiGroupBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiGroupBox2.Location = new System.Drawing.Point(20, 170);
-            this.uiGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiGroupBox2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiGroupBox2.Name = "uiGroupBox2";
-            this.uiGroupBox2.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiGroupBox2.Size = new System.Drawing.Size(615, 104);
-            this.uiGroupBox2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox2.TabIndex = 1;
-            this.uiGroupBox2.Text = "最小化";
-            this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiCheckBox1
             // 
@@ -109,91 +90,13 @@
             this.uiCheckBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SuperTextToolBox.Properties.Settings.Default, "AutoIcon", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.uiCheckBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiCheckBox1.Location = new System.Drawing.Point(33, 48);
+            this.uiCheckBox1.Location = new System.Drawing.Point(48, 178);
             this.uiCheckBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox1.Name = "uiCheckBox1";
             this.uiCheckBox1.Size = new System.Drawing.Size(320, 29);
             this.uiCheckBox1.Style = Sunny.UI.UIStyle.Custom;
             this.uiCheckBox1.TabIndex = 0;
             this.uiCheckBox1.Text = "关闭时最小化到任务栏右下角";
-            // 
-            // uiGroupBox1
-            // 
-            this.uiGroupBox1.Controls.Add(this.uiCheckBox2);
-            this.uiGroupBox1.Controls.Add(this.uiButton3);
-            this.uiGroupBox1.Controls.Add(this.label1);
-            this.uiGroupBox1.Controls.Add(this.textBox2);
-            this.uiGroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.uiGroupBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.uiGroupBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiGroupBox1.Location = new System.Drawing.Point(20, 27);
-            this.uiGroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiGroupBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiGroupBox1.Size = new System.Drawing.Size(615, 129);
-            this.uiGroupBox1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox1.TabIndex = 0;
-            this.uiGroupBox1.Text = "保存";
-            this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiCheckBox2
-            // 
-            this.uiCheckBox2.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiCheckBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiCheckBox2.Location = new System.Drawing.Point(33, 36);
-            this.uiCheckBox2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiCheckBox2.Name = "uiCheckBox2";
-            this.uiCheckBox2.Size = new System.Drawing.Size(150, 29);
-            this.uiCheckBox2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiCheckBox2.TabIndex = 16;
-            this.uiCheckBox2.Text = "开启一键保存";
-            this.uiCheckBox2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // uiButton3
-            // 
-            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiButton3.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.uiButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.uiButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.uiButton3.Location = new System.Drawing.Point(547, 64);
-            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton3.Name = "uiButton3";
-            this.uiButton3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiButton3.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.uiButton3.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.uiButton3.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.uiButton3.Size = new System.Drawing.Size(53, 35);
-            this.uiButton3.Style = Sunny.UI.UIStyle.Custom;
-            this.uiButton3.TabIndex = 15;
-            this.uiButton3.Text = "...";
-            this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 65);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 27);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "默认保存目录";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(170, 65);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(352, 34);
-            this.textBox2.TabIndex = 12;
             // 
             // tabPage2
             // 
@@ -205,7 +108,7 @@
             this.tabPage2.Controls.Add(this.uiComboBox1);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(200, 60);
+            this.tabPage2.Size = new System.Drawing.Size(653, 327);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "翻译";
             // 
@@ -240,11 +143,11 @@
             // 
             // uiComboBox2
             // 
-            settings1.AutoIcon = false;
-            settings1.SettingsKey = "";
-            settings1.TranslateApiKey = "";
-            settings1.TranslateAppID = "";
-            this.uiComboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", settings1, "TranslateApiKey", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            settings2.AutoIcon = false;
+            settings2.SettingsKey = "";
+            settings2.TranslateApiKey = "";
+            settings2.TranslateAppID = "";
+            this.uiComboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", settings2, "TranslateApiKey", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.uiComboBox2.DataSource = null;
             this.uiComboBox2.FillColor = System.Drawing.Color.White;
             this.uiComboBox2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
@@ -339,6 +242,68 @@
             this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // uiCheckBox2
+            // 
+            this.uiCheckBox2.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.uiCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiCheckBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiCheckBox2.Location = new System.Drawing.Point(48, 50);
+            this.uiCheckBox2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiCheckBox2.Name = "uiCheckBox2";
+            this.uiCheckBox2.Size = new System.Drawing.Size(150, 29);
+            this.uiCheckBox2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiCheckBox2.TabIndex = 20;
+            this.uiCheckBox2.Text = "开启一键保存";
+            // 
+            // uiButton3
+            // 
+            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.uiButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.uiButton3.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
+            this.uiButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.uiButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton3.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.uiButton3.Location = new System.Drawing.Point(560, 102);
+            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton3.Name = "uiButton3";
+            this.uiButton3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.uiButton3.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
+            this.uiButton3.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.uiButton3.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.uiButton3.Size = new System.Drawing.Size(53, 35);
+            this.uiButton3.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton3.TabIndex = 19;
+            this.uiButton3.Text = "...";
+            this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(43, 103);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 27);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "默认保存目录";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox2.Location = new System.Drawing.Point(183, 103);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.MinimumSize = new System.Drawing.Size(1, 16);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Padding = new System.Windows.Forms.Padding(5);
+            this.textBox2.ShowText = false;
+            this.textBox2.Size = new System.Drawing.Size(352, 34);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.textBox2.Watermark = "";
+            // 
             // frmSet
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -359,9 +324,7 @@
             this.Load += new System.EventHandler(this.frmSet_Load);
             this.uiTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.uiGroupBox2.ResumeLayout(false);
-            this.uiGroupBox1.ResumeLayout(false);
-            this.uiGroupBox1.PerformLayout();
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
@@ -378,13 +341,11 @@
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIComboBox uiComboBox2;
         private Sunny.UI.UIComboBox uiComboBox1;
-        private Sunny.UI.UIGroupBox uiGroupBox1;
-        private Sunny.UI.UIButton uiButton3;
-        private System.Windows.Forms.Label label1;
-        private Sunny.UI.UITextBox textBox2;
-        private Sunny.UI.UIGroupBox uiGroupBox2;
         private Sunny.UI.UICheckBox uiCheckBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Sunny.UI.UICheckBox uiCheckBox2;
+        private Sunny.UI.UIButton uiButton3;
+        private System.Windows.Forms.Label label1;
+        private Sunny.UI.UITextBox textBox2;
     }
 }

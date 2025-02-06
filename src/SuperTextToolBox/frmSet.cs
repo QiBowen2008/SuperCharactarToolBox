@@ -80,12 +80,28 @@ namespace SuperTextToolBox
                 control.Height = (int)(control.Height * scaleFactor);
                 control.Left = (int)(control.Left * scaleFactor);
                 control.Top = (int)(control.Top * scaleFactor);
-                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+                if (control ==uiTabControl1)
+                {
+                    foreach(Control tcontrol in uiTabControl1.Controls)
+                    {
+                        if(tcontrol is TabPage tpage)
+                        {
+                            foreach (Control pcon in tpage.Controls)
+                            {
+                                pcon .Width = (int)(pcon.Width * scaleFactor);
+                                pcon.Height = (int)(pcon.Height * scaleFactor);
+                                pcon.Left = (int)(pcon.Left * scaleFactor);
+                                pcon .Top = (int)(pcon.Top * scaleFactor);
+                            }
+                        }
+                    }
+                }
             }
-            Height = (int)(Height * scaleFactor);
-            Width = (int)(Width * scaleFactor);
+            this.uiTabControl1.ItemSize = new System.Drawing.Size((int)(150*scaleFactor) ,(int)( 40*scaleFactor ));
+            Height = (int)(474 * scaleFactor);
+            Width = (int)(659 * scaleFactor);
             titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
-            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
+             
             moveable = false;
             textBox2.Text = IniManager.getString("Set", "FileSavePath", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Set.INIpath);
             string autosave = IniManager.getString("Set", "AutoSave", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Set.INIpath);

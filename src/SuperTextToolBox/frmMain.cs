@@ -32,18 +32,18 @@ namespace SuperTextToolBox
             }
             // 根据DPI比例调整控件尺寸
             float scaleFactor = dpiX / 96f; // 96 DPI 是标准DPI
+            
             foreach (Control control in Controls)
             {
                 control.Width = (int)(control.Width * scaleFactor);
                 control.Height = (int)(control.Height * scaleFactor);
                 control.Left = (int)(control.Left * scaleFactor);
                 control.Top = (int)(control.Top * scaleFactor);
-                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
             }
-            Height = (int)(Height * scaleFactor);
-            Width = (int)(Width * scaleFactor);
+            Height = (int)(518 * scaleFactor);
+            Width = (int)(616 * scaleFactor);
             titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
-            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
+             
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Drawing;
 using Sunny.UI;
 using System.Windows.Forms;
@@ -6,7 +7,6 @@ using PaddleOCRSharp;
 using System.Diagnostics;
 using OfficeOpenXml;
 using System.Collections.Generic;
-using System.IO;
 
 namespace SuperTextToolBox.OCRTool
 {
@@ -53,14 +53,22 @@ namespace SuperTextToolBox.OCRTool
                 control.Height = (int)(control.Height * scaleFactor);
                 control.Left = (int)(control.Left * scaleFactor);
                 control.Top = (int)(control.Top * scaleFactor);
-                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+                if (control is UIDataGridView uidatagridview)
+                {
+                    uidatagridview.RowTemplate.Height = (int)(uidatagridview.RowTemplate.Height * scaleFactor);
+                    foreach (DataGridViewColumn dataGridViewColumn in uidatagridview.Columns)
+                    {
+                        dataGridViewColumn.Width = (int)(dataGridViewColumn.Width * scaleFactor);
+                    }
+                }
+                if(control is UIComboBox comboBox)
+                {
+                    comboBox.ItemHeight = (int)(comboBox.ItemHeight * scaleFactor);
+                }
             }
             Height = (int)(Height * scaleFactor);
             Width = (int)(Width * scaleFactor);
-            titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
-            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
-            FileName.Width = (int)(FileName.Width * scaleFactor);
-            Status.Width = (int)(Status.Width * scaleFactor);
+            titleHeight = Convert.ToInt32(titleHeight * scaleFactor);  
             uiComboBox1.Text = "中英文精简（自带）";
         }
 

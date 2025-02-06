@@ -242,7 +242,7 @@
             this.Name = "frmCyjl";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.Style = Sunny.UI.UIStyle.Custom;
-            this.Text = "成语接龙";
+            this.Text = "成语接龙游戏";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 449, 328);
             this.Load += new System.EventHandler(this.frmCyjl_Load);

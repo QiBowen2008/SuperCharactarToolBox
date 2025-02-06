@@ -1,5 +1,4 @@
-﻿using IKAnalyzerNet;
-using Lucene.Net.Analysis;
+﻿using JiebaNet.Segmenter;
 using System;
 using System.Drawing;
 using System.IO;
@@ -8,6 +7,7 @@ namespace SuperTextToolBox
 {
     public partial class frmFenci : Sunny.UI.UIForm
     {
+        JiebaSegmenter _segmenter = new JiebaSegmenter();
         public frmFenci()
         {
             InitializeComponent();
@@ -22,20 +22,16 @@ namespace SuperTextToolBox
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            string testString = richTextBox1.Text;                  //获取字符串
-            string slen = testString.Length.ToString();             //获取字符串长度
-            IKAnalyzer ika = new IKAnalyzer();
-            TextReader r = new StringReader(testString);
-            TokenStream ts = ika.TokenStream("TestField", r);
-            int m = 0;
-            long begin = DateTime.Now.Ticks;
-            for (Token t = ts.Next(); t != null; t = ts.Next())
+            string inputText = richTextBox1 .Text.Trim();
+            if (!string.IsNullOrEmpty(inputText))
             {
-                m++;                                                 //显示每项分词结果的序列号、起始字符数、结尾字符数
-                richTextBox3.Text += m + ")" + (t.StartOffset() + "," + t.EndOffset() + " = " + t.TermText()) + "\r\n";
+                var segments = _segmenter.Cut(inputText, cutAll: false); // 使用精确模式
+                richTextBox3.Text = string.Join(" / ", segments);
             }
-            int end = (int)((DateTime.Now.Ticks - begin) / 10000);
-            richTextBox3.Text += ("长度：" + slen + " 耗时： " + (end) + "ms" + " 分词个数：" + m + " 效率(词/秒)：" + ((int)(m * 1.0f / (end) * 1000))) + "\r\n";
+            else
+            {
+                MessageBox.Show("请输入要分词的文本！");
+            }
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -99,12 +95,12 @@ namespace SuperTextToolBox
                 control.Height = (int)(control.Height * scaleFactor);
                 control.Left = (int)(control.Left * scaleFactor);
                 control.Top = (int)(control.Top * scaleFactor);
-                control.Font = new Font(control.Font.FontFamily, control.Font.Size * scaleFactor, control.Font.Style);
+                 
             }
-            Height = (int)(Height * scaleFactor);
-            Width = (int)(Width * scaleFactor);
+            Height = (int)(450 * scaleFactor);
+            Width = (int)(594 * scaleFactor);
             titleHeight = Convert.ToInt32(titleHeight * scaleFactor);
-            titleFont = new Font(titleFont.FontFamily, titleFont.Size * scaleFactor, titleFont.Style);
+             
         }
     }
 }
